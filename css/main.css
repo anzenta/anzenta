@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+@font-face {
+  font-family: Bebas;
+  src: url('../fonts/BebasKai-Regular.otf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color:#e3e1e1;
+  width: 100%;
+  height: 100%;
+    overflow-y:hidden;
+    overflow-x:hidden;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  z-index: -10;}
+
+#anzentamenu{
+display:inline-flex;
+width: 120px;
+height: 100px;
+min-width: 8vw;
+min-height: 8vh;
+max-width: 8vw;
+max-height: 8vh;
+margin-top:-1.5vh;}
+
+#menu{background-color:white;
+position:sticky;
+z-index: 1099;
+top:0;
+width:100vw;
+height:5.0vh;
+color: ;
+border-color: red;
+border-bottom-width: 0.5vh;
+border-bottom-style:groove;}
+
+#menulist{
+  display: flex;
+}
+
+#home{float:;width:;margin-left: 10vw; margin-top:0.75vh;
+  font-size:13px;z-index: 1005;
+}
+#services{float:;width:;text-align:;margin-top:0.75vh;font-size:13px;margin-left:10vw;}
+#savmenu{height:4.8vh;width: 3vw;}
+
+li {
+  font-size: 1.25rem;
+  display:inline ;
+height: 3vh;
+  top:0px;
+  z-index:100;}
+
+
+.menu ul li {
+  margin-left: 2.5rem;
+  list-style-type: none;
+  visibility: hidden;}
+
+a {
+  margin-top: 0vh;
+  text-decoration: none;
+  color: #3c3c3c;
+  font-size: 2.5vh;
+font-weight: bold;}
+
+a:hover{  color: #cc040c;
+    transition: all 0.3s ease-in-out;}
+
+
+
+.text{
+  margin-top:;
+  height: 0vh;
+  background-color:;
+}
+
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  transform-style: preserve-3d;}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;}
+
+.title{text-align: center; color: black; font-size: 28px;margin-bottom: 10px;}
+.content{text-align: left;}

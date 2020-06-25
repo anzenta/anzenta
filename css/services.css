@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+@font-face {
+  font-family: Bebas;
+  src: url('../fonts/BebasKai-Regular.otf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{ }
+
+html,
+body {
+
+  width: 100%;
+  height: 100%;
+    overflow-y:hidden ;
+    overflow-x:hidden;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  z-index: -10;}
+.boxes{margin-top:-80vh;}
+
+.lattice{  background: url('../img/volnal2.png') no-repeat center;}
+
+.img{width: 14vw; height:14vh; vertical-align: middle; margin-top: 10vh; margin-left:1vh;}
+.row{width:100%;}
+.title{text-align: center; color: black; font-size: 25px;margin-bottom: 10px;}
+
+
+.box{width:90vw;border-style:inset; border-width: 0.2vw; border-color: red; display: inline-flex; background-color: white;
+padding: 2vw; margin:2vw;}
+
+.text{text-align: left;}
+
+.aboutus{background-color:white;
+top:0px;
+margin-top: -100vh;}
+
+    .black{
+      background: url('') no-repeat center;
+        background-size:cover;
+        display:flex;
+        transform: translateZ(-500px) scale(3.2);
+        z-index: 100;
+        width: 100vw;
+        height: 90vh;
+    margin-left:-0vw;
+        margin-top:-43vh;}
+
+        #anzentamenu{
+        display:inline-flex;
+        width: 120px;
+        height: 100px;
+        min-width: 8vw;
+        min-height: 8vh;
+        max-width: 8vw;
+        max-height: 8vh;
+        margin-top:-1.5vh;}
+
+        #menu{background-color:white;
+        position:sticky;
+        z-index: 1099;
+        top:0;
+        width:100vw;
+        height:5.0vh;
+        color: ;
+        border-color: red;
+        border-bottom-width: 0.5vh;
+        border-bottom-style:groove;}
+
+        #menulist{
+          display: flex;
+        }
+
+        #home{float:;width:;margin-left: 10vw; margin-top:0.75vh;
+          font-size:13px;z-index: 1005;
+        }
+        #services{float:;width:;text-align:;margin-top:0.75vh;font-size:13px;margin-left:10vw;}
+        #savmenu{height:4.8vh;width: 3vw;}
+
+        li {
+          font-size: 1.25rem;
+          display:inline ;
+        height: 3vh;
+          top:0px;
+          z-index:100;}
+
+
+        .menu ul li {
+          margin-left: 2.5rem;
+          list-style-type: none;
+          visibility: hidden;}
+
+    .vonal3{
+      background: url('../img/volnal2.png') no-repeat center;
+        background-size:cover;
+        display:flex;
+        transform: translateZ(-500px) scale(3.2);
+        z-index: -100;
+        width: 100vw;
+        height: 100vh;
+    margin-left:-100vw;
+        margin-top:-160vh;;
+        }
+
+        a {
+          margin-top: 0vh;
+          text-decoration: none;
+          color: #3c3c3c;
+          font-size: 2.5vh;
+        font-weight: bold;}
+
+        a:hover{  color: #cc040c;
+            transition: all 0.3s ease-in-out;}
+
+
+
+.btn {
+  border: 1.5px solid #8c8c8c;;
+  border-radius: 0.75rem;
+  padding: 0.55rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #cc040c;
+  background: #fff;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  transform-style: preserve-3d;}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;}
+
+.sky {
+background: url('../img/dock2.jpg') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-1000px) scale(3.0);
+  z-index: -100;
+  width: 150%;
+  height: 150%;
+  left: -25vw;
+  top:auto;}
+
+.bushes {
+background: url('../img/0.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-900px) scale(5);
+  z-index: -2;
+  left:-10vw;
+  width: 80vw;
+  height: 80vh;}
+
+.water {
+  background: url('../img/.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(0px) scale(2.33333333);
+  z-index: -10;
+margin-top:-10vh;}
+
+.people1 {
+  background: url('../img/.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-250px) scale(1.833333333);
+  z-index: 4;
+  width: 90vw;
+  height: 90vh;
+  top: -10vh;
+  left:5vw;
+}
+
+.people2 {
+  background: url('../img/1.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-125px) scale(1.8);
+  z-index: -10;
+  width: 130vw;
+  height: 130vh;
+  top:-25vh;
+  left: -15vw;
+}
+
+.people3 {
+  background:   url('../img/')   no-repeat center;
+  background-size: cover;
+  transform: translateZ(-400px) scale(1.5);
+  z-index: 60;
+  margin-top:-45vh;
+  margin-left:-10vh;
+}
+
+.text {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    width: 100%;
+    font-color: white;
+    z-index:;
+    height: 10vh;
+    margin-top:15vh;
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: white;
+float:;width:50%;text-align:;margin-top:1.5vh;
+column-width: 40%;
+margin-left: 15vw;
+margin-top: 5vw;
+width: 30%;}
+
+.title{text-align: center; color: black;}
+.content{text-align: left;}
+#div2{margin-top: 10vh;}
+
+
+
+@media (min-width: 1126px) {
+  .sky,
+  .bushes,
+  .water,
+  .people1,
+  .people2,
+  .people3,
+  .hero-text {
+    background-size: contain;
+  }
+}
