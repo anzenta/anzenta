@@ -52,6 +52,93 @@ border-bottom-style:groove;}
 #services{float:;width:;text-align:;margin-top:0.75vh;font-size:13px;margin-left:10vw;}
 #savmenu{height:4.8vh;width: 3vw;}
 
+
+
+
+
+
+
+
+
+.dropdown .dropbtn {
+  float: right;
+  overflow: hidden;
+  right: 0;
+  margin-left: 35vw;
+  align: center;
+  text-decoration: none;
+  color: #3c3c3c;
+  font-size: 2.5vh;
+font-weight: bold;
+}
+
+ .dropbtn {
+   margin-top: 0.7vh;
+   text-align: center;
+  cursor: pointer;
+  font-size:;
+  border: none;
+  outline: none;
+  color:;
+  padding:;
+  background-color: inherit;
+  font-family: inherit;
+  margin: ;
+}
+
+
+.dropbtn:hover{  color: #cc040c;
+    transition: all 0.3s ease-in-out;}
+
+
+
+.dropdown-content {
+border-style:inset; border-width: 0.2vw; border-color: red;
+padding: 1vh;
+  margin-top: 4.6vh;
+    margin-left: 35vw;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+border-style:inset; border-width: 0.2vw; border-color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show {
+  display: block;
+}
+
+.show {display:block;}
+
+
+
+
 li {
   font-size: 1.25rem;
   display:inline ;
