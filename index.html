@@ -44,7 +44,7 @@ img {vertical-align: middle;}
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.2s ease;
+  transition: background-color 1.0s ease;
 }
 
 .active {
@@ -54,18 +54,18 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.2s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: 0.5}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: 0}
   to {opacity: 1}
 }
 
@@ -107,7 +107,55 @@ img {vertical-align: middle;}
         <li><img src="img/sav.png"  id="savmenu"></li>
          <li id="home"><a href="index.html">Home</a></li>
          <li id="services"><a href="services.html">Services</a></li>
-         <li id="projects"><a href="projects.html"></a></li>
+
+
+
+
+
+
+
+
+
+
+              <div class="navbar">
+
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Contact Us
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <li> office@anzenta.com </li>
+                  <li><br/><br/> Tel: <br/ >+36-30-5941204
+  </li>
+                  <li><br/> +36-30-3439860</li>
+                </div>
+                </div>
+              </div>
+
+
+              <script>
+
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+
+
+              window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                  if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('');
+                  }
+                }
+              }
+              </script>
+
+
+
+
+
+
+
        </ul></div>
 
 
@@ -179,35 +227,35 @@ img {vertical-align: middle;}
   margin-right: 10vw;
   padding: 10vh;
 
-  transform: translateZ(10px) scale(1.0);"><div style="margin-left:10%; margin-right: 10%; width: 80%;">
+  transform: translateZ(10px) scale(1.0);"><div style="margin-left:10vw; margin-right: 10%; width: 80%;">
 
-  <div class="title">Our Vision</div>
-  <div class="content">
-Our goal is to be one of the finest health, safety and environmental consulting company on the
-market. Our beliefs, we will achieve client satisfaction by desire to know our clients and their needs
-better than any others in this field.
-With our services, we wish to serve our clients from the strategic planning till the implementation of
-the projects by providing innovative and resource-efficient solutions.
-</div>
-</div>
+    <div class="title">Our Vision</div>
+    <div class="content">
+  Our goal is to be one of the finest health, safety and environmental consulting company on the
+  market. Our beliefs, we will achieve client satisfaction by desire to know our clients and their needs
+  better than any others in this field.
+  <br /><br /> With our services, we wish to serve our clients from the strategic planning till the implementation of
+  the projects by providing innovative and resource-efficient solutions.
+  </div>
+  </div>
 
-<div id="box2" style="padding-top:10vh; text-align: left; max-width:; margin-left:10%; margin-right: 10%; width: 80%;">
-  <div class="title">Our Mission</div>
-  <div class="content" style="text-align: left;"></div>
-<div>To contribute to the success of our clients by delivering smart and sustainable solutions keeping
-always in mind the highest safety and environmental standards. To assist our clients to achieve zero
-harm to succeed in protecting employees, property and the environment.
-</div></div>
+  <div id="box2" style="padding-top:10vh; text-align: left; max-width:; margin-left:10vw; margin-right: 10%; width: 80%;">
+    <div class="title">Our Mission</div>
+    <div class="content" style="text-align: left;"></div>
+  <div>To contribute to the success of our clients by delivering smart and sustainable solutions keeping
+  always in mind the highest safety and environmental standards. To assist our clients to achieve zero
+  harm to succeed in protecting employees, property and the environment.
+  </div></div>
 
-<div id="box3" style="padding-top:10vh; align: center;margin-left:10%; margin-right: 10%; width: 80%;; ">
-<div class="title">Who we are</div>
-<div class="content">We are independent consultants and engineers with significant experience in the field of HSE.
-Our multidisciplinary educational background facilitates us to provide broad range of HSE services.
-We believe that safe work environment and satisfied employees are prerequisites for success and
-good performance of a company. We have long term relationship with our Clients, which is based on open discussion, trust and tailor-
-made solutions. We take a fully integrated multidisciplinary approach and assemble specialized team to meet
-objectives of every single project. We build fit for purpose solutions with the goal of having a measurable financial impact, and most
-importantly, the health and well-being of their employees.</div>
+  <div id="box3" style="padding-top:10vh; align: center;margin-left:10vw; margin-right: 10%; width: 80%;;margin-bottom: 150vh; ">
+  <div class="title">Who we are</div>
+  <div class="content">We are independent consultants and engineers with significant experience in the field of HSE.
+  Our multidisciplinary educational background facilitates us to provide broad range of HSE services.
+  We believe that safe work environment and satisfied employees are prerequisites for success and
+  good performance of a company.<br /><br /> We have long term relationship with our Clients, which is based on open discussion, trust and tailor-
+  made solutions.<br /> We take a fully integrated multidisciplinary approach and assemble specialized team to meet
+  objectives of every single project. We build fit for purpose solutions with the goal of having a measurable financial impact, and most
+  importantly, the health and well-being of their employees.</div>
 </div>
 </div>
 </div>
