@@ -20,7 +20,46 @@
           <li id="home"><a href="index.html">Home</a></li>
           <li id="services"><a href="services.html">Services</a></li>
           <li id="projects"><a href="projects.html"></a></li>
-        </ul></div>
+        
+              <div class="navbar">
+
+              <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Contact Us
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <li> office@anzenta.com </li>
+                <li><br/><br/> Tel: <br/ >+36-30-5941204
+        </li>
+                <li><br/> +36-30-3439860</li>
+              </div>
+              </div>
+            </div>
+
+
+            <script>
+
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+
+
+
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('');
+                }
+              }
+            }
+            </script>
+
+          
+          
+          </ul></div>
 
     <div>
 
