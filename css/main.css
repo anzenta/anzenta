@@ -21,6 +21,10 @@ body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   z-index: -10;}
 
+
+
+.body{max-width: 900px;}
+
 #anzentamenu{
 display:inline-flex;
 width: 120px;
