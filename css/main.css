@@ -176,12 +176,12 @@ li {
 
 #menu {
 min-width: 100%;
-min-height: 40px;
+min-height: 50px;
 top:0px;
 background-color:white;
 z-index: 199;
 position: sticky;
-height:50px;
+height:65px;
 max-height:;
 max-width: ;
 border-color: red;
@@ -221,8 +221,8 @@ min-height: px;
 
 #anzentamenu{
 display:inline-block;
-max-height:75px;
-margin-top:-16px;
+max-height:96px;
+margin-top:-27px;
 position: relative;
 overflow-y: hidden;}
 
@@ -291,36 +291,23 @@ height: 3vh;
 .title{text-align: center; color:#c21900; font-size: 46px;margin-bottom: 10px;
 background-color:rgba(76, 175, 80, 0.0); font-weight: bold;}
 
+.subtitle{text-align:; color:#c21900; font-size: 20px;
+  margin-bottom: 10px;
+background-color:rgba(76, 175, 80, 0.0); font-weight: bold;
+max-width: 530px;}
+
+
+
 .content{text-align: left;
 margin-left:;
+max-width:
+
 color:#3b3b3b;
   background-color:rgba(76, 175, 80, 0.0);}
 
 
 
 
-
-.footnote{background-color: white; color: black;
-  border-top:4px;
-  padding-bottom:18px;
-    border-left:0px;
-
-  border-color: red;
-  border-style: ridge;
-  width: 160%;
-  margin-left:-45%;
-
-    margin-top:;
-    text-decoration: none;
-    color: #3c3c3c;
-    font-size: 15px;
-  font-weight:;
-    text-underline-position: under;
-
-    display: inline-block;
-
-
-}
 
 .email{align-content: center;
       margin-left: 41%;
@@ -341,7 +328,7 @@ em{font-weight:bold;}
 
 
 #box1{width:800px; margin-left:-20%;}
-#box2{width:800px; margin-left: ; }
+#box2{width:800px; margin-left: ;}
 #box3{width:800px; margin-left:-20%;margin-top: 80px;}
 
 
@@ -366,9 +353,6 @@ width: 0;
 
 }
 
-.wrapper {
-  background-image: url(/img/anzenta.svg);
-}
 
 a:hover:after {
   width: 100%;
@@ -407,4 +391,32 @@ a:hover{  color: #cc040c;
     transition: all 0.3s ease-in-out;
    text-decoration:none;
      text-underline-position: under;
+ }
+
+
+
+
+
+
+
+ .footnote{background-color: white; color: black;
+   border-top:4px;
+   padding-bottom:18px;
+     border-left:0px;
+border-bottom: 0px;
+   border-color: red;
+   border-style: ridge;
+   width: 160%;
+   margin-left:-45%;
+
+     margin-top:;
+     text-decoration: none;
+     color: #3c3c3c;
+     font-size: 15px;
+   font-weight:;
+     text-underline-position: under;
+
+     display: inline-block;
+
+
  }
