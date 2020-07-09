@@ -201,8 +201,8 @@ overflow-x:visible;
 overflow-x:;
 display:block;
 position: absolute;
-top:-10px;
-min-height: 200px;
+top:-40px;
+min-height: 150px;
 }
 
 
@@ -215,6 +215,19 @@ top:-30.45px;
 min-height: px;
 
 }
+
+
+
+#kacsa{margin-left: 380px; padding: 30px;width: 600px; background-color: white; z-index: 10;
+overflow-x:;
+display:block;
+position: absolute;
+top:-30.45px;
+min-height: px;
+}
+
+
+
 
 
 
