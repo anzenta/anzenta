@@ -200,8 +200,8 @@ overflow-x:visible;
 overflow-x:;
 display:block;
 position: absolute;
-top:-10px;
-min-height: 200px;
+top:-40px;
+min-height: 150px;
 }
 
 
@@ -213,6 +213,17 @@ position: absolute;
 top:-30.45px;
 min-height: px;
 
+}
+
+
+
+
+#kacsa{margin-left: 380px; padding: 30px;width: 600px; background-color: white; z-index: 10;
+overflow-x:;
+display:block;
+position: absolute;
+top:-30.45px;
+min-height: px;
 }
 
 
@@ -290,10 +301,11 @@ height: 3vh;
 .title{text-align: center; color:#c21900; font-size: 46px;margin-bottom: 10px;
 background-color:rgba(76, 175, 80, 0.0); font-weight: bold;}
 
-.subtitle{text-align:; color:#c21900; font-size: 20px;
+.subtitle{text-align: center; color:#c21900; font-size: 20px;
   margin-bottom: 10px;
 background-color:rgba(76, 175, 80, 0.0); font-weight: bold;
-max-width: 530px;}
+max-width: 630px;
+}
 
 
 
@@ -398,7 +410,8 @@ a:hover{  color: #cc040c;
 
 
 
- .footnote{background-color: white; color: black;
+ .footnote{
+   background-color: white; color: black;
    border-top:4px;
    padding-bottom:18px;
      border-left:0px;
@@ -416,6 +429,4 @@ border-bottom: 0px;
      text-underline-position: under;
 
      display: inline-block;
-
-
  }
