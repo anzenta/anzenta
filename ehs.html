@@ -50,6 +50,7 @@
         top: 0;
       }
 
+
       /* The dots/bullets/indicators */
       .dot {
         height: 15px;
@@ -61,9 +62,11 @@
         transition: background-color 1.6s ease;
       }
 
+
       .active {
         background-color: #717171;
       }
+
 
       /* Fading animation */
       .fade {
@@ -72,6 +75,7 @@
         animation-name: fade;
         animation-duration: 10.0s;
       }
+
 
       @-webkit-keyframes fade {
         from {opacity: .4}
@@ -87,14 +91,7 @@
       @media only screen and (max-width: 300px) {
         .text {font-size: 11px}
       }
-
-
-
 </style>
-
-
-
-
 
 
 
@@ -111,28 +108,11 @@
 
 
 
-
   </head>
 
 
 
-
-
-
-
-
-
-
-
   <body>
-
-
-
-
-
-
-
-
      <div class="wrapper">
 
 
@@ -140,90 +120,60 @@
 
 
 
-<nav id="menu">
-            <ul id="menulist" >
-             <li><img src="https://raw.githubusercontent.com/anzenta/anzenta/master/img/Anzenta.png"  id="anzentamenu"></li>
+       <nav id="menu">
+                   <ul id="menulist" >
+                    <li><img src="https://raw.githubusercontent.com/anzenta/anzenta/master/img/Anzenta.png"  id="anzentamenu"></li>
+                    <li class="menuk"><a href="index.html">Home</a></li>
+                    <li class="menuk" class="dropbtn" ><a href="#">Services</a>
+                      <ul>
+                        <li>
+                          <li class="menu2"><a href="#">Health and Safety</a>
+                            <ul class="health" id="malac">
+       <div id="malac">
+                                            <li ><a href="risk.html" >Risk Assessment</a></li>
+                                            <li ><a href="personal.html">Personal Protective Equipment</a></li>
+                                            <li ><a href="incidents.html">Incidents/Accidents</a></li>
+                                               <li ><a href="high.html">High Risk Activities – Permit to Work Systems</a></li>
+                                                   <li ><a href="industrial.html">Industrial Hygiene</a></li>
+                                                   </div>
+                            </ul>
+                           </li>
+                        </li>
+                        <li class="almenuk"> <a href="#">
+       Auditing, Due Diligence
+       </a>
 
+                          <ul id="kutya">
+       <div id="kutya">
+                                          <li><a href="ehs.html">EHS auditing, compliance</a></li>
+                                          <li><a href="technical.html">Technical and Environmental Due Diligence</a></li>
+       </div>
+                          </ul>
+                        </li>
+                     <li><a href="ergonomics.html">Ergonomics</a></li>
+                                                                  <li><a href="#">Machinery</a>
 
-             <li class="menuk"><a href="index.html">Home</a></li>
-
-             <li class="menuk" class="dropbtn" ><a href="services.html">Services</a>
-
-               <ul>
-                 <li>
-
-
-
-                   <li class="menu2"><a href="">Health and Safety</a>
-
-                     <ul class="health" id="malac">
-<div id="malac">
-                                     <li ><a href="risk.html" >Risk Assessment</a></li>
-                                     <li ><a href="personal.html">Personal Protective Equipment</a></li>
-                                     <li ><a href="incidents.html">Incidents/Accidents</a></li>
-                                        <li ><a href="high.html">High Risk Activities – Permit to Work Systems</a></li>
-                                            <li ><a href="industrial.html">Industrial Hygiene</a></li>
-                                            </div>
-                     </ul>
+                                                                    <ul id="kacsa">
+                                                               <div id="kacsa">
+                                                                 <li><a href="machine.html">Machine Assessment</a></li>
+                                                                 <li><a href="lock.html">Lock out/Tag out</a></li>
+                                                                  </div>
+                                                                    </ul>
+                                                                  </li>
+                            <li><a href="fire.html">Fire Safety</a></li>
+                                 <li><a href="construction.html">Construction safety</a></li>
+                                     <li><a href="training.html">Training</a></li>
+                         </ul>
                     </li>
-
-
-
-                 </li>
-                 <li class="almenuk"> <a href="#">
-Auditing, Due Diligence
-</a>
-
-                   <ul id="kutya">
-<div id="kutya">
-                                   <li><a href="ehs.html">EHS auditing, compliance</a></li>
-                                   <li><a href="technical.html">Technical and Environmental Due Diligence</a></li>
-</div>
-                   </ul>
-
-                 </li>
-
-
-
-                 <li><a href="ergonomics.html">Ergonomics</a></li>
-
-
-
-                                          <li><a href="machinery.html">Machinery</a>
-
-                                            <ul id="kacsa">
-                                       <div id="kacsa">
-                                         <li><a href="machine.html">Machine Assessment</a></li>
-                                         <li><a href="lock.html">Lock out/Tag out</a></li>
-                                          </div>
-                                            </ul>
-                                          </li>
-
-
-                        <li><a href="fire.html">Fire Safety</a></li>
-                          <li><a href="construction.html">Construction safety</a></li>
-                              <li><a href="training.html">Training</a></li>
-                  </ul>
-             </li>
-
-<li class="menuk" class="dropbtn" id=""><a href="pandemia.html">Pandemia</a>
-
-     <li class="menuk" id="contactus" class="dropbtn"><a href="contactus.html">Contact Us</a></li>
-
-
-
-
-
-
-
-
-</ul>
-
-
-</nav>
-
-
-
+       <li class="menuk" class="dropbtn" id=""><a href="pandemia.html">Pandemia</a>
+        <li class="menuk" id="contactus" ><a href="#" onclick="myFunction()">Contact Us</a></li>
+        <script>
+            function myFunction() {
+              var elmnt = document.getElementById("content");
+              elmnt.scrollIntoView();}
+       </script>
+       </ul>
+       </nav>
 
 
 
@@ -238,6 +188,10 @@ new simpleParallax(image, {
 </script>
 
 
+
+
+
+<div>
     <div id="slide" style="margin-top: -25%;">
   <div class="slideshow-container">
     <div class="mySlides fade"> <img src="img/index/41.jpg" style="width:100% ;"> </div>
@@ -258,7 +212,7 @@ new simpleParallax(image, {
     <span class="dot" onclick="currentSlide(5)"></span>
       <span class="dot" onclick="currentSlide(6)"></span>
    </div>
-     <br>
+   <br>
 
 
 
@@ -298,7 +252,7 @@ new simpleParallax(image, {
 
 
 
-  <div class="boxes" style="margin-top: 10vh;">
+  <div class="boxes" style="margin-top: 10vh; perspective-origin: center;">
 
 
     <div class="row"
@@ -308,10 +262,10 @@ new simpleParallax(image, {
 
 
      <div class="box"
-    style="width:60%;margin-left: 25%">
+    style="width:60%;margin-left: 22%">
 
       <p class=><p class="title"> EHS auditing, compliance </p>
-  <div   style=" display:inline-flex;">     <div>  <p><br />Well performing companies keep a good balance between compliance and costs.  We help you in complying with the many rules and regulations in the areas of safety and the environment, and at the same time we have experience to advise you the best industrial practices. We are not an authority. We are committed supporting you with our advice, rather than penalize. </p>
+  <div   style=" display:inline-flex;">     <div style="margin-top: 70px;">  <p><br />Well performing companies keep a good balance between compliance and costs.  We help you in complying with the many rules and regulations in the areas of safety and the environment, and at the same time we have experience to advise you the best industrial practices. We are not an authority. We are committed supporting you with our advice, rather than penalize. </p>
     </div>
 
 <div><img src="img/2.jpg" style="width:360px; margin: 20px;"; alt="Flowers in Chania" class="img"><img></div>
@@ -328,11 +282,11 @@ new simpleParallax(image, {
 </div>
 <br /><br />
 <div style="align: center; margin-left: 30%;">
-      <br />  <div style="align: center; margin-left: -15%; font-size: 18px; " class="subtitle">     Audits are an important tool for assuring compliance with:
+      <br />  <div style="align: center; margin-left: -10%; font-size: 18px; " class="subtitle">     Audits are an important tool for assuring compliance with:
       </div>
 
 
-<div style="margin-left: 55px;">
+<div style="margin-left: 95px;">
          &nbsp; &nbsp;  •	Regulatory Requirements
      <br />&nbsp; &nbsp;  •	Management Systems
        <br /> &nbsp; &nbsp; •	Internal Policies & Standards
@@ -346,7 +300,7 @@ new simpleParallax(image, {
  <div><div  style=" display:inline-flex;">
  <div style="display: inline-flex;">In general, an HSE audit consists of employee interviews, detailed record reviews, and site visits. Based on this information, we determine non-compliances and suggest corrective actions and recommend the best management practices. The objective is to improve your EHS performance, prevent violations and fines, and demonstrate due diligence.
   </div><div><img src="img/53.jpg" style="width:360px; ;" alt="Flowers in Chania" class="img"><img></div></div></div>
-
+<br />
 <br /> <br /> <p  class="subtitle" style="text-align: center; font-size: 16px; margin-top: -110px; width: 1000px;">  Be proactive. Do not wait until the potential problems happen. </p>
  <br /><br /><br />
 
@@ -376,7 +330,7 @@ new simpleParallax(image, {
 
 
 
-      <div class="footnote" >
+      <div class="footnote"  id="content">
 
               <div style="margin-left: 25%;"  style="align: center;">
         <div class="email"> &#9993
@@ -396,5 +350,6 @@ new simpleParallax(image, {
 
 
    </div>
+   <div>
   </body>
 </html>
