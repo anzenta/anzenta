@@ -88,7 +88,9 @@
         .text {font-size: 11px}
       }
 
-
+      html {
+        scroll-behavior: smooth;
+      }
 
 </style>
 
@@ -108,6 +110,8 @@
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
+
+
 
 
 
@@ -147,14 +151,14 @@
 
              <li class="menuk"><a href="index.html">Home</a></li>
 
-             <li class="menuk" class="dropbtn" ><a href="">Services</a>
+             <li class="menuk" class="dropbtn" ><a href="#">Services</a>
 
                <ul>
                  <li>
 
 
 
-                   <li class="menu2"><a href="">Health and Safety</a>
+                   <li class="menu2"><a href="#">Health and Safety</a>
 
                      <ul class="health" id="malac">
 <div id="malac">
@@ -187,7 +191,7 @@ Auditing, Due Diligence
 
                  <li><a href="ergonomics.html">Ergonomics</a></li>
 
-                                                           <li><a href="machinery.html">Machinery</a>
+                                                           <li><a href="#">Machinery</a>
 
                                                              <ul id="kacsa">
                                                         <div id="kacsa">
@@ -207,8 +211,15 @@ Auditing, Due Diligence
 
 <li class="menuk" class="dropbtn" id=""><a href="pandemia.html">Pandemia</a>
 
-     <li class="menuk" id="contactus" class="dropbtn"><a href="contactus.html">Contact Us</a></li>
+     <li class="menuk" id="contactus" ><a href="#" onclick="myFunction()">Contact Us</a></li>
 
+
+     <script>
+     function myFunction() {
+       var elmnt = document.getElementById("content");
+       elmnt.scrollIntoView();
+     }
+     </script>
 
 
 
@@ -229,7 +240,7 @@ Auditing, Due Diligence
 <script src="script/simpleParallax.js">
 
 
-   var image = document.getElementsByClassName('thumbnail');
+   var image = document.getElementsByClassName('contactus');
 new simpleParallax(image, {
 	orientation: 'right'
 });
@@ -363,10 +374,11 @@ new simpleParallax(image, {
 
 
 
+</div>
 
 
 
-<div class="footnote" style=""> <div class="email"> &#9993
+<div class="footnote" id="content" style=""> <div class="email"> &#9993
   &nbsp;<em>Email:</em> office@anzenta.com</div>
 <div class="email"></div>
 <div class="tel">
@@ -377,7 +389,6 @@ new simpleParallax(image, {
 </div>
 </div>
 
-</div>
 
 </body>
 </html>
