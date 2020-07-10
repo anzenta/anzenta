@@ -110,7 +110,7 @@ html {
 
   overflow-y:hidden;
 
-border: 1px black;
+border: ;
   margin: var(--top-spacing) auto;
 max-width: ;
 min-width: 100px;
@@ -186,7 +186,7 @@ max-width: ;
 border-color: red;
 border-bottom-width: 0.5vh;
 border-bottom-style:groove;
-margin-left: 1%;
+
 padding-bottom: 6.5px;
 
 
@@ -286,7 +286,7 @@ height: 3vh;
 }
 
 .wrapper {
-  margin-left:-1%;
+  margin-left:;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
