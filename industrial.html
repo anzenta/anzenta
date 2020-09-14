@@ -5,6 +5,10 @@
     <meta
     name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no" >
 
+
+
+
+
     <style>
             body{
               background-color: #ffffff;
@@ -16,7 +20,7 @@
 
 
             * {box-sizing: border-box;}
-      body {font-family: Verdana, sans-serif;}
+      body {font-family:  georgia;-serif;Serif;}
       .mySlides {display: none;}
       img {vertical-align: middle;}
 
@@ -88,7 +92,9 @@
         .text {font-size: 11px}
       }
 
-
+      html {
+        scroll-behavior: smooth;
+      }
 
 </style>
 
@@ -118,103 +124,237 @@
 
 
 
+<body>
+<div class="wrapper">
+<nav id="menu">
+            <ul id="menulist" >
+             <li><a href="index.html"><img src="https://raw.githubusercontent.com/anzenta/anzenta/master/img/Anzenta.png"  id="anzentamenu"></a></li>
+
+             <style>
+             .sidenav {
+               height: 100%;
+               width: 0;
+               position: fixed;
+               z-index: 10;
+               top: 0;
+               left: 0;
+
+               overflow-x: hidden;
+               transition: 0.55s;
+               padding-top: 60px;
+               text-align:center;
+
+
+               background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.55' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cg fill='%23c7001f'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cg fill='%23c7001f'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(19.8) translate(-949.49 -712.12)'%3E%3Cg fill='%23c7001f'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+
+
+
+             }
+
+             .sidenav a {
+               min-height: 30px;
+               padding:;
+               text-decoration: none;
+               font-size: 25px;
+               color: black;
+               display: block;
+               transition: 0.5s;
+               background-color: rgba(250, 250, 250, 0.17);
+             }
+             .sidenav a:hover{
+                color:;
+                border-color: ;
+
+
+                text-underline-position: ;
+               transition: all 0.1s ease-in-out;
+               background-color: grey;
+               transition: all 0.38s ease-in-out;
+
+             }
+
+             .sidenav .closebtn {
+               position: absolute;
+               top: 0;
+               right: 25px;
+               margin-left: 50px;
+              background-color: ;
+              z-index:10000;
+             }
+             @media screen and (max-height: 550px) {
+               .sidenav {padding-top: 18px;}
+               .sidenav a {font-size: 18px;}
+             }
+
+             .collapsible1 {
+               background-color:rgba(255, 205, 205, 0.28);
+               color: : ;
+               cursor: pointer;
+               padding: px;
+               width: 100%;
+               border: none;
+               text-align: ;
+               outline: none;
+               font-size: 15px;
+             }
+
+             .active1, .collapsible1:hover {
+               background-color: grey;
+               transition: all 0.38s ease-in-out;
+
+             }
+
+             .content1 {
+              margin-top: 10px;
+               padding: px;
+               display: none;
+               overflow: hidden;
+               color: ;
+               background-color:;
+               font-size:;
+             }
+
+             </style>
+     <div id="mySidenav" class="sidenav">
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<br>
+<br>
+                     <button type="button1" class="collapsible1"> <a href="#">Health and Safety</a></button>
+                     <div class="content1">
+                     <li ><a href="risk.html" >Risk Assessment</a></li>
+                                                            <li ><a href="personal.html">Personal Protective Equipment</a></li>
+                                                            <li ><a href="incidents.html">Incidents/Accidents</a></li>
+                                                            <li ><a href="high.html">High Risk Activities – Permit to Work Systems</a></li>
+                                                            <li ><a href="industrial.html">Industrial Hygiene</a></li>
+<br>
+                    </div>
+
+
+
+                     <button type="button1" class="collapsible1">
+                      <a href="#">
+                       Auditing, Due Diligence
+                       </a>
+                      </button>
+
+                      <div class="content1">
+                           <li><a href="ehs.html">EHS auditing, compliance</a></li>
+                                                          <li><a href="technical.html">Technical and Environmental Due Diligence</a></li>
+
+<br>  <br>
+                      </div>
+
+
+
+                      <a href="ergonomics.html">Ergonomics</a>
+
+                      <button type="button1" class="collapsible1">
+                        <a href="#">Machinery</a>
+                        </button>
+
+                      <div class="content1">
+                        <li><a href="machine.html">Machine Assessment</a></li>
+                        <li><a href="lock.html">Lock out/Tag out</a></li>
+<br>  <br>
+
+                      </div>
+
+
+                      <a href="fire.html">Fire Safety</a>
+                      <a href="construction.html">Construction safety</a>
+                      <a href="training.html">Training</a>
+                     </div>
+
+
+
+                           <script>
+                           function openNav() {
+                             document.getElementById("mySidenav").style.width = "100%";
+                           }
+
+                           function closeNav() {
+                             document.getElementById("mySidenav").style.width = "0";
+                           }
+                           </script>
+
+                           <script>
+                           var coll = document.getElementsByClassName("collapsible1");
+                           var i;
+
+                           for (i = 0; i < coll.length; i++) {
+                             coll[i].addEventListener("click", function() {
+                               this.classList.toggle("active1");
+                               var content1 = this.nextElementSibling;
+                               if (content1.style.display === "block") {
+                                 content1.style.display = "none";
+                               } else {
+                                 content1.style.display = "block";
+                               }
+                             });
+                           }
+                           </script>
+
+
+
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+             <li class="menük" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+
+                 <a href="#">Services</a>
 
 
 
 
 
 
-  <body>
+             </li>   </span>
 
+<li class="menük" class="dropbtn" id=""><a href="pandemia.html">Pandemia</a></li>
 
+     <li class="menük" id="contactus" ><a href="#" onclick="myFunction()">Contact Us</a></li>
 
-
-
-
-
-
-     <div class="wrapper">
-
-
-
-       <nav id="menu">
-                   <ul id="menulist" >
-                    <li><img src="https://raw.githubusercontent.com/anzenta/anzenta/master/img/Anzenta.png"  id="anzentamenu"></li>
-                    <li class="menuk"><a href="index.html">Home</a></li>
-                    <li class="menuk" class="dropbtn" ><a href="#">Services</a>
-                      <ul>
-                        <li>
-                          <li class="menu2"><a href="#">Health and Safety</a>
-                            <ul class="health" id="malac">
-       <div id="malac">
-                                            <li ><a href="risk.html" >Risk Assessment</a></li>
-                                            <li ><a href="personal.html">Personal Protective Equipment</a></li>
-                                            <li ><a href="incidents.html">Incidents/Accidents</a></li>
-                                               <li ><a href="high.html">High Risk Activities – Permit to Work Systems</a></li>
-                                                   <li ><a href="industrial.html">Industrial Hygiene</a></li>
-                                                   </div>
-                            </ul>
-                           </li>
-                        </li>
-                        <li class="almenuk"> <a href="#">
-       Auditing, Due Diligence
-       </a>
-                          <ul id="kutya">
-       <div id="kutya">
-                                          <li><a href="ehs.html">EHS auditing, compliance</a></li>
-                                          <li><a href="technical.html">Technical and Environmental Due Diligence</a></li>
-       </div>
-                          </ul>
-                        </li>
-                     <li><a href="ergonomics.html">Ergonomics</a></li>
-                                                                  <li><a href="#">Machinery</a>
-
-                                                                    <ul id="kacsa">
-                                                               <div id="kacsa">
-                                                                 <li><a href="machine.html">Machine Assessment</a></li>
-                                                                 <li><a href="lock.html">Lock out/Tag out</a></li>
-                                                                  </div>
-                                                                    </ul>
-                                                                  </li>
-                            <li><a href="fire.html">Fire Safety</a></li>
-                                 <li><a href="construction.html">Construction safety</a></li>
-                                     <li><a href="training.html">Training</a></li>
-                         </ul>
-                    </li>
-       <li class="menuk" class="dropbtn" id=""><a href="pandemia.html">Pandemia</a>
-        <li class="menuk" id="contactus" ><a href="#" onclick="myFunction()">Contact Us</a></li>
-        <script>
-            function myFunction() {
-              var elmnt = document.getElementById("content");
-              elmnt.scrollIntoView();}
-       </script>
-       </ul>
-       </nav>
-
-
-
-
+     <script>
+     function myFunction() {
+       var elmnt = document.getElementById("footnote");
+       elmnt.scrollIntoView();
+     }
+     </script>
+</ul>
+</nav>
 
 
 
 
 <script src="script/simpleParallax.js">
 
-   var image = document.getElementsByClassName('thumbnail');
+
+   var image = document.getElementsByClassName('contactus');
 new simpleParallax(image, {
 	orientation: 'right'
 });
 
 </script>
 
-    <div id="slide" style=" margin-top: -25%;">
+
+    <div id="slide">
   <div class="slideshow-container">
-    <div class="mySlides fade"> <img src="img/index/41.jpg" style="width:100% ;"> </div>
+    <div class="mySlides fade"> <img src="img/index/44.jpg" style="width:100% ;"> </div>
+    <div class="mySlides fade"> <img src="img/index/46.jpg" style="width:100%"> </div>
+    <div class="mySlides fade"> <img src="img/index/41.jpg" style="width:100%"> </div>
     <div class="mySlides fade"> <img src="img/index/42.jpg" style="width:100%"> </div>
-    <div class="mySlides fade"> <img src="img/index/55.jpg" style="width:100%"> </div>
-    <div class="mySlides fade"> <img src="img/index/27.jpg" style="width:100%"> </div>
-  <div class="mySlides fade"> <img src="img/index/38.jpg" style="width:100%"> </div>
-  <div class="mySlides fade"> <img src="img/index/39.jpg" style="width:100%"> </div>
+  <div class="mySlides fade"> <img src="img/index/56.jpg" style="width:100%"> </div>
+  <div class="mySlides fade"> <img src="img/index/27.jpg" style="width:100%"> </div>
+<div class="mySlides fade"> <img src="img/index/39.jpg" style="width:100%"> </div>
+<div class="mySlides fade"> <img src="img/index/43.jpg" style="width:100%"> </div>
+<div class="mySlides fade"> <img src="img/index/68.jpg" style="width:100%"> </div>
+<div class="mySlides fade"> <img src="img/index/45.jpg" style="width:100%"> </div>
+<div class="mySlides fade"> <img src="img/index/70.jpg" style="width:100%"> </div>
+<div class="mySlides fade"> <img src="img/index/72.jpg" style="width:100%"> </div>
+<div class="mySlides fade"> <img src="img/index/73.jpg" style="width:100%"> </div>
+
 
   <br>
   <div style="text-align:center">
@@ -224,8 +364,18 @@ new simpleParallax(image, {
   <span class="dot" onclick="currentSlide(4)"></span>
     <span class="dot" onclick="currentSlide(5)"></span>
       <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+              <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                  <span class="dot" onclick="currentSlide(12)"></span>
+                    <span class="dot" onclick="currentSlide(13)"></span>
    </div>
      <br>
+
+
+
 
        <script>
        var slideIndex = 0;
@@ -255,9 +405,6 @@ new simpleParallax(image, {
 
 
 
-
-
-
  <div class="boxes" >
 
 
@@ -265,7 +412,7 @@ new simpleParallax(image, {
 <br /><br />
 
 
-             <p class=><p class="title" style="margin-left: -14%; max-width: 75%;">  Industrial Hygiene</p>
+             <p class=><p class="title" style="margin-left:auto ;margin-right:auto; max-width: ;">  Industrial Hygiene</p>
 
              <div class="" style="display: inline-flex ;">
 
@@ -295,7 +442,7 @@ new simpleParallax(image, {
 
 
            <div
-                class="content" style="margin-bottom: ; width: 1000px; display: inline-flex;margin-left: -10vw;">
+                class="content" style="margin-bottom: ; width: 700px; display: inline-flex;margin-left:auto;margin-right: auto;">
             <br />       We are professionally qualified by education, training,
                   and experience to anticipate, recognize, evaluate, and develop controls
                   for occupational health hazards and indoor environmental issues.   <br />
@@ -303,22 +450,22 @@ new simpleParallax(image, {
                 <br />    Experts of Anzenta develop hazard exposure assessments for workplace environments and deliver practical solutions for hazard control. The objective is to protect the safety and well-being of your employees.
                 <br />    <br />  We systematically go through the entire workplace to identify safety hazards and lapses in safety practices. We take samples, gather as much information as possible to characterize the types, durations and frequencies of hazards workers encounter during the workday. We make suggestions for engineering, administrative and PPE controls in order to reduce any potential employee exposures and maintain compliance with regulations.
          <div>
-                <div style="margin-top:; margin: 30px;"><img src="img/26.jpg" style="width:360px; ;"></div>
-                <div style="margin-top:; margin: 30px; "><img src="img/6.jpg" style="width:360px; ;"></div>
+                <div style="margin-top:; margin-left: 30px;display:flex;"><img src="img/26.jpg" style="width:320px;margin-top: 60px ;"></div>
+                <div style="margin-top:; margin-left: 30px; "><img src="img/6.jpg" style="width:320px; margin-top: 60px ;"></div>
                </div> </div>
 
           </div>
   </div>
 <br /><br />
 
-<div style="display: inline-flex; margin-left: -6.5vw;">
+<div style="display: inline-flex; margin-left: auto;margin-right:auto;">
 
 
   <div>
-    <div style="margin: 30px;"><img src="img/14.jpg" style="width:360px; ;"></div>
+    <div style="margin: 30px;"><img src="img/14.jpg" style="width:230px; margin-top:50px;"></div>
 
   </div>
-<div>
+<div style="margin-left: auto;margin-right:auto;">
  <br />  <p class="subtitle">Among the Industrial Hygiene services, <br />we provide the followings:</p>
               <br />  •	Site surveys and risk assessment.
                   <br />  •	Industrial Hygiene program development<br /> for construction and general industry.
@@ -332,9 +479,8 @@ new simpleParallax(image, {
                                <br />  •	Lead and asbestos assessments.
                                <br />  •	Lighting surveys.
                                <br /> •	Ergonomic assessments<br /> (see more in ergonomics topic).
-               <br />   <br />      <br />
+               <br />   <br />    <br />
 </div>
-
 </div>
 
 
@@ -366,27 +512,16 @@ new simpleParallax(image, {
 
 
 
+             <div class="footnote" id="footnote" > <div class="email"> &#9993; <em>Email:</em> office@anzenta.com</div>
+             <div class="email"></div>
+             <div class="tel">
 
-      <div class="footnote"
+             &#9742; <em>Tel.:</em>   &nbsp; &nbsp; +36-30-5941204</div>
+             <div class="tel">  &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   +36-30-3439860</div>
+             <div>
+             </div>
+             </div>
 
-             id="content">
 
-              <div style="margin-left: %;"  style="align: center;">
-        <div class="email"> &#9993
-        &nbsp;<em>Email:</em> office@anzenta.com</div>
-
-        <div class="email"></div>
-      <div class="tel">
-
-      &#9742  &nbsp; <em>Tel.:</em> +36-30-5941204</div>
-      <div class="tel">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  +36-30-3439860</div>
-      <div>
-      </div></div>
-      </div>
-      </div>
-  </div>
-
-</div>
-
-</body>
-</html>
+             </body>
+             </html>
