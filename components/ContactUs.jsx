@@ -20,7 +20,7 @@ const ContactUs = () => {
             Contact us
           </Text>
           <Text fontSize={["xl", "2xl"]} fontWeight="300" pr={4}>
-            Give us a call and we&lsquo;ll call you back.
+            Give us a call and we will call you back.
           </Text>
         </VStack>
       </Flex>
