@@ -38,7 +38,7 @@ const ContactUs = () => {
         <VStack pt={16}>
           <VStack bg="#d02428" p={6}>
             <Text fontSize="2xl" color="white">
-              Call us
+              Call us2
             </Text>
 
             {/* <Image src="linkedIn.svg" boxSize={20} /> */}
