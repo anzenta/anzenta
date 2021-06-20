@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <I18nProvider lngDict={lngDict} locale={router.locale}>
         <ChakraProvider theme={customTheme}>
-          <Component {...pageProps} />
+          <Component {...rest} />
         </ChakraProvider>
       </I18nProvider>
     </>
