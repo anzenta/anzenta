@@ -12,10 +12,10 @@ const Layout = ({ title, children }) => {
   useEffect(() => {
     async function changeLocale() {
       if (router.locale === "en") {
-        i18n.set("en", await import("../locales/en.json"));
+        i18n.set("en", await import("./locales/en.json"));
         i18n.locale("en");
       } else if (router.locale === "hu") {
-        i18n.set("hu", await import("../locales/hu.json"));
+        i18n.set("hu", await import("./locales/hu.json"));
         i18n.locale("hu");
       }
     }

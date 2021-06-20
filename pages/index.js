@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
-import Home from "../components/Home";
-import Services from "../components/Services";
-import ContactUs from "../components/ContactUs";
+import Layout from "../Components/Layout";
+import Home from "../Components/Home";
+import Services from "../Components/Services";
+import ContactUs from "../Components/ContactUs";
 
 export default function Index() {
   return (
