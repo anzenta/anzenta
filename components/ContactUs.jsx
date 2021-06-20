@@ -20,7 +20,7 @@ const ContactUs = () => {
             Contact us
           </Text>
           <Text fontSize={["xl", "2xl"]} fontWeight="300" pr={4}>
-            Give us a call and we'll call you back.
+            Give us a call and we&apos;ll call you back.
           </Text>
         </VStack>
       </Flex>
@@ -120,13 +120,7 @@ const ContactUs = () => {
 
 export default ContactUs;
 
-const ContactCard = ({
-  name,
-  title,
-  phoneNumberCall,
-  phoneNumberDisplay,
-  email,
-}) => {
+const ContactCard = ({ name, title }) => {
   return (
     <Flex w="100%" justifyContent="center">
       <HStack spacing={6} alignItems="flex-start">
@@ -136,71 +130,7 @@ const ContactCard = ({
             <Text fontSize="2xl">{name}</Text>
             <Text>{title}</Text>
           </VStack>
-          <VStack color="darkGray" alignItems="flex-start">
-            {/* <Link
-              position="relative"
-              href={`tel: +${phoneNumberCall}`}
-              _hover={{ textDecor: "none" }}
-            >
-              <Text
-                as="span"
-                fontSize={["lg", "xl"]}
-                fontWeight="400"
-                color="darkGray"
-                _after={{
-                  pos: "absolute",
-                  content: "''",
-                  w: "0",
-                  h: "1px",
-                  display: "block",
-                  mb: "0",
-                  bottom: "1px",
-                  left: "0",
-                  bg: "red",
-                }}
-                _hover={{
-                  _after: {
-                    width: "100%",
-                    transition: "width 0.2s ease",
-                  },
-                }}
-              >
-                {phoneNumberDisplay}
-              </Text>
-            </Link>
-            <Link
-              href={`mailto: ${email}`}
-              isExternal
-              _hover={{ textDecoration: "none" }}
-              position="relative"
-            >
-              <Text
-                as="span"
-                fontSize={["lg", "xl"]}
-                fontWeight="400"
-                color="darkGray"
-                _after={{
-                  pos: "absolute",
-                  content: "''",
-                  w: "0",
-                  h: "1px",
-                  display: "block",
-                  mb: "0",
-                  bottom: "1px",
-                  left: "0",
-                  bg: "red",
-                }}
-                _hover={{
-                  _after: {
-                    width: "100%",
-                    transition: "width 0.2s ease",
-                  },
-                }}
-              >
-                {email}
-              </Text>
-            </Link> */}
-          </VStack>
+          <VStack color="darkGray" alignItems="flex-start"></VStack>
         </VStack>
       </HStack>
     </Flex>
