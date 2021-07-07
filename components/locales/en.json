@@ -3,6 +3,72 @@
   "navPandemia": "Pandemia",
   "navContact": "Contact us",
 
+  "motto1": "Who we are",
+  "motto2": "Our Vision",
+  "motto3": "Our Mission",
+  "motto4": "What we offer",
+  "motto5": " ",
+
+  "sliderTitle_1": "Professional help in the fields of HSE",
+  "sliderTitle_2": "Take your business to the next level",
+  "sliderTitle_3": "",
+  "sliderTitle_4": "",
+  "sliderTitle_5": "",
+  
+  "sliderText_1": "We are independent consultants and engineers with significant experience in the field of HSE. Our multidisciplinary educational background facilitates us to provide broad range of HSE services.",
+  "sliderText_2": "Our goal is to be one of the finest health, safety and environmental consulting company on the market. Our beliefs, we will achieve client satisfaction by desire to know our clients and their needs better than any others in this field.",
+  "sliderText_3": "To contribute to the success of our clients by delivering smart and sustainable solutions keeping always in mind the highest safety and environmental standards. To assist our clients to achieve zero harm to succeed in protecting employees, property and the environment.",
+  "sliderText_4": "Our broad range of specialized services include health and safety consulting, EHS auditing, assessments, management tools and trainings in the fields of ergonomics, fire safety, construction safety.",
+  "sliderText_5": "Get in touch Today!",
+
+  "buttonText_Contactus": "Contact us",
+  "buttonText_Services": "Services",
+
+  "MiddleTextBand1": "Your needs - Our expertise",
+  "MiddleTextBand2": "Learn more about our services.",
+
+  "gridcontentsTitle_1": "Health and Safety",
+  "gridcontentsTitle_2": "EHS auditing, compliance",
+  "gridcontentsTitle_2-2": "Technical and Environmental Due Diligence",
+  "gridcontentsTitle_3": "Machine Assessment",
+  "gridcontentsTitle_3-2": "Lock out / Tag out",
+  "gridcontentsTitle_4": "Ergonomics",
+  "gridcontentsTitle_5": "Fire Safety",
+  "gridcontentsTitle_6": "Construction Safety",
+  "gridcontentsTitle_7": "Training",
+  
+  "gridcontentsText_1": "Our services include, but are not limited to risk assessment, personal protective equipments, activities concerning high risk activities and industrial hygiene.",
+  "gridcontentsText_2": "Well performing companies keep a good balance between compliance and costs. We help you in complying with the many rules and regulations.",
+  "gridcontentsText_2-2":"Environmental liabilities, and unforeseen technical conditions are common reasons for incurring unexpected expenses in connection with the purchase of a commercial property.",
+  "gridcontentsText_3": "A machine safety assessment is the first and an elementary step to identifying the risks, creating an action plan and implementing solutions.",
+  "gridcontentsText_3-2":"Without proper maintenance, industrial and construction machinery fails occur more frequently. During maintenance works, workers are more exposed to danger.", 
+  "gridcontentsText_4": "The goal in ergonomic design is to achieve employees´ well-being, the highest job performance and job satisfaction.",
+  "gridcontentsText_5": "Preventing a fire is always a better solution than extinguishing it. Prevention is necessary and companies must also comply with legal requirements.",
+  "gridcontentsText_6": "Construction sites include the full range of hazards both for workers and for those who work nearby. We provide solutions to eliminate these hazards.",
+  "gridcontentsText_7": "Workplace safety training is an essential and critical part of a successful safety management system.",
+
+  "subpage1": "Learn more",
+
+
+  "contact1": "Contact us",
+  "contact2": "Give us a call and we will call you back.",
+  "contact3": "Beáta Horváth, PhD",
+  "contact4": "Managing Director",
+  "contact5": "Beáta Horváth, PhD",
+  "contact6": "Managing Director",
+  "contact7": "",
+  
+  "phone":"Phone",
+  
+  "sliderTitle_5": "",
+  "sliderTitle_5": "",
+  "sliderTitle_5": "",
+  "sliderTitle_5": "",
+  "sliderTitle_5": "",
+  "sliderTitle_5": "",
+  "sliderTitle_5": "",
+  "sliderTitle_5": "",
+
   "headerHome": "Home",
   "headerWebDev": "Website Development",
   "headerMobApp": "Mobile Application",

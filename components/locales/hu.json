@@ -1,7 +1,61 @@
 {
-  "navServices": "Szolgáltatások",
+  "navServices":"Szolgáltatások",
   "navPandemia": "Pandémia",
   "navContact": "Kapcsolat",
+
+  "motto1": "",
+  "motto2": "",
+  "motto3": "",
+  "motto4": "",
+  "motto5": "",
+
+  "sliderTitle_1": "",
+  "sliderTitle_2": "",
+  "sliderTitle_3": "",
+  "sliderTitle_4": "",
+  "sliderTitle_5": "",
+  
+  "sliderText_1": "",
+  "sliderText_2": "",
+  "sliderText_3": "",
+  "sliderText_4": "",
+  "sliderText_5": "",
+
+  "buttonText_Contactus": "Kapcsolat",
+  "buttonText_Services": "Szolgáltatásaink",
+  
+  "MiddleTextBand1": "Az Ön igényei, a Mi szakértelmünk.",
+  "MiddleTextBand2": "Tudjon meg többet szolgáltatásainkról!",
+
+  "gridcontentsTitle_1": "Munkahelyi egészségvédelem és biztonság",
+  "gridcontentsTitle_2": "Gépek biztonságának értékelése",
+  "gridcontentsTitle_2-2": "Kizárás, kitáblázás",
+  "gridcontentsTitle_3": "EHS audit, jogi szabályozás betartása",
+  "gridcontentsTitle_3-2": "Műszaki és környezetvédelmi kellő gondosság (Due Diligence)",
+  "gridcontentsTitle_4": "Ergonómia",
+  "gridcontentsTitle_5": "Tűzvédelem",
+  "gridcontentsTitle_6": "Építési területek biztonsága",
+  "gridcontentsTitle_7": "Oktatás",
+
+  "gridcontentsText_1": "Szakmai profilunkba tartozik a kockázatértékelés, egyéni védő felszerelésekkel, munkabalesetekkel, magas kockázatú tevékenységekkel illetve ipari higiéniával kapcsolatos munkavédelmi tevékenység.",
+  "gridcontentsText_2": "A gépek okozta balesetek elkerülése érdekében alapvető fontosságú, hogy gépeit felmérje, és biztonsági értékelésüket elvégezze.",
+  "gridcontentsText_2-2": "A termelőipari berendezések megfelelő időben elvégzett karbantartása alapvető fontosságú a gép, vagy egyéb berendezés biztonságos működése érdekében.",
+  "gridcontentsText_3": "A jól teljesítő vállalatok megtalálják a megfelelő egyensúlyt a költségek szinten tartása és a jogi szabályoknak való megfelelés között.",
+  "gridcontentsText_3-2": "Ingatlan tranzakciók, ingatlanfejlesztési projektek, cégfelvásárlások vagy egyesülések során a fel nem tárt műszaki és környezetvédelmi problémák jelentős plusz költségekkel járhatnak.",
+  "gridcontentsText_4": "Az ergonómiai tervezés célja az alkalmazottak jóléte, elégedettsége és jó teljesítménye.",
+  "gridcontentsText_5": "A tűz megelőzése mindig jobb megoldás a tűzoltásnál. A vállalatok jogi felelőssége mellett nagy terhet jelenthet egy esetleges tűz okozta károk elhárítása.",
+  "gridcontentsText_6": "A vállalatok jogi felelőssége mellett nagy terhet jelenthet egy esetleges tűz okozta károk elhárítása.",
+  "gridcontentsText_7": "A sikeres munkabiztonsági kultúra kiépítésének kulcsfontosságú eleme a munkavállalók oktatása.",
+
+  "contact1": "Kapcsolat",
+  "contact2": "Keressen minket bizalommal elérhetőségeink bármelyikén.",
+  "contact3": "Horváth Beáta, PhD",
+  "contact4": "Ügyvezető igazgató",
+  "contact5": "Horváth Beáta, PhD",
+  "contact6": "Ügyvezető igazgató",
+  "contact7": "",
+
+  "phone":"Telefon",
 
   "headerHome": "Home",
   "headerWebDev": "Honlapfejlesztés",
@@ -11,6 +65,12 @@
   "headerReferences": "Referenciák",
   "headerContact": "Kapcsolat",
   "headerQuickMsg": "Gyors üzenet",
+
+  "sliderTitle_1": "",
+  "sliderTitle_2": "",
+  "sliderTitle_3": "",
+  "sliderTitle_4": "",
+  "sliderTitle_5": "",
 
   "homeTitle": "Gyors és egyszerű megoldás a Te üzletednek",
   "homeText": "A Develops csapata professzionális minőséget nyújt az informatika minden ágában.",

@@ -1,6 +1,6 @@
 import Icon from "@chakra-ui/icon";
 import { Box, VStack, Text, Flex, HStack } from "@chakra-ui/layout";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+import { Button, ButtonGroup, Link } from "@chakra-ui/react";
 
 import {
   ArrowForwardIcon,
@@ -9,21 +9,25 @@ import {
 } from "@chakra-ui/icons";
 
 import { useState } from "react";
+import router from "next/router";
 
 const GridContent = ({ gridcontent, isTitleTooLong }) => {
   const [isHovered, setHovered] = useState(false);
+
+  
   return (
     <Flex
-      bg="white"
-      p={[3, 5]}
-      borderRadius="15px"
-      boxShadow="0px 0px 2px 2px lightGray"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      cursor="pointer"
-      transition="transform 0.3s"
-      w="100%"
-      maxW="100%"
+    bg="white"
+    p={[3, 5]}
+    borderRadius="15px"
+    boxShadow="0px 0px 2px 2px lightGray"
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    cursor="pointer"
+    transition="transform 0.3s"
+    w="100%"
+    maxW="100%"
+    onClick={() => router.push(gridcontent.to)}
     >
       <Flex
         color="darkGray"
@@ -92,3 +96,4 @@ const GridContent = ({ gridcontent, isTitleTooLong }) => {
 };
 
 export default GridContent;
+

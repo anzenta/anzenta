@@ -9,6 +9,7 @@ import {
 import { Image } from "@chakra-ui/react";
 import { useI18n } from "next-localization";
 import React, { useState, useEffect } from "react";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Header = () => {
   const i18n = useI18n();
@@ -22,17 +23,17 @@ const Header = () => {
     changeToThisLocale = "hu";
   }
   const [hasScrolledFromTop, setScrolledFromTop] = useState(false);
-  const [shouldMonitorScroll, setShouldMonitorScroll] = useState(false);
+  // const [shouldMonitorScroll, setShouldMonitorScroll] = useState(false);
 
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  // const [isDropdownVisible, setDropdownVisible] = useState(false);
 
-  function showTooltip() {
-    setDropdownVisible(true);
-  }
+  // function showTooltip() {
+  //   setDropdownVisible(true);
+  // }
 
-  function hideTooltip() {
-    setDropdownVisible(false);
-  }
+  // function hideTooltip() {
+  //   setDropdownVisible(false);
+  // }
   // scroll direction detection
   useEffect(() => {
     // ## function declaration
@@ -65,22 +66,6 @@ const Header = () => {
       if (scrollPos > 0) {
         setScrolledFromTop((prevState) => true);
       }
-      // if (scrollPos === 0 && !shouldMonitorScroll) {
-      //   () => setScrolledFromTop(false);
-      //   () => shouldMonitorScroll(true);
-
-      //   console.log(hasScrolledFromTop);
-      //   console.log(shouldMonitorScroll);
-      //   console.log(scrollPos);
-      // }
-
-      // if (scrollPos > 0 && shouldMonitorScroll) {
-      //   () => setScrolledFromTop(true);
-      //   () => setShouldMonitorScroll(false);
-
-      // console.log(hasScrolledFromTop);
-      // console.log(shouldMonitorScroll);
-      // console.log(scrollPos);
     });
   }, []);
 
@@ -92,7 +77,7 @@ const Header = () => {
       as="nav"
       zIndex="1"
       w="100%"
-      height="70px"
+      height={["70px", "70px"]}
       //bg={
       //   hasScrolledFromTop ? "linear-gradient(20deg,#d02428 , white)" : "white"
       // }
@@ -104,10 +89,26 @@ const Header = () => {
       }
       justifyContent="center"
     >
-      <Flex height="80%" direction="row" mx="10px" position="relative">
+      <Flex
+        height={["60%", "80%"]}
+        direction="row"
+        mx="10px"
+        position="relative"
+      >
         <Link href="/">
-          <Image src="Anzenta.png" boxSize="100%" objectFit="contain" />
+          <Image src="Anzenta.png" height="100%" objectFit="contain" />
         </Link>
+
+        <Box
+          h="100%"
+          position="absolute"
+          top={["2px", "10px"]}
+          right="10px"
+          display={["block", "block", "none"]}
+          w={["35px", "45px"]}
+        >
+          <HamburgerMenu />
+        </Box>
 
         <Flex
           pl={5}
@@ -117,79 +118,35 @@ const Header = () => {
           right="0"
           justifyContent="center"
           h="full"
+          display={["none", "none", "flex"]}
         >
           <MenuItem
-            to="/"
+            to="#services"
             hiddenPseudoTitle="Services"
             hasDropDown
-            showTooltip={showTooltip}
-            hideTooltip={hideTooltip}
+            // showTooltip={showTooltip}
+            // hideTooltip={hideTooltip}
           >
             {i18n.t("navServices")}
           </MenuItem>
-          {/* <MenuItem to="/" hiddenPseudoTitle="Pandemia">
-            {i18n.t("navPandemia")}
-          </MenuItem> */}
-          <MenuItem to="/" hiddenPseudoTitle="Contact Us">
+
+          <MenuItem to="#contact" hiddenPseudoTitle="Contact Us">
             {i18n.t("navContact")}
           </MenuItem>
 
           <MenuItem to={`/${changeToThisLocale}`} hiddenPseudoTitle={loc}>
             {changeToThisLocale}
           </MenuItem>
-
-          {/* <Box
-            // this should be reworked
-            display="block"
-            position="absolute"
-            w="230px"
-            h="200px"
-            bg="red.200"
-            visibility={isDropdownVisible ? "visible" : "hidden"}
-            top="100%"
-            left="0"
-            onMouseEnter={showTooltip}
-            onMouseLeave={hideTooltip}
-          ></Box> */}
         </Flex>
       </Flex>
-      {/* <Box
-        w={hasScrolledFromTop ? "100%" : "0"}
-        transition="0.3s width"
-        height="1%"
-        // bg="linear-gradient(0.25turn, #dc4a53, white)"
-        bg="#d02428"
-      ></Box> */}
     </Flex>
   );
 };
 
-const MenuItem = ({
-  children,
-  to,
-  hiddenPseudoTitle,
-  hasDropDown,
-  showTooltip,
-  hideTooltip,
-}) => {
-  // function showTooltip() {
-  //   setDropdownVisible(true);
-  // }
-
-  // function hideTooltip() {
-  //   setDropdownVisible(false);
-  // }
-
+const MenuItem = ({ children, to, hiddenPseudoTitle }) => {
   return (
     <>
-      <Flex
-        px="20px"
-        justifyContent="center"
-        alignItems="center"
-
-        // onMouseEnter={showTooltip}
-        // onMouseLeave={hideTooltip}
-      >
+      <Flex px="20px" justifyContent="center" alignItems="center">
         <Link
           href={to}
           _after={{
@@ -209,7 +166,7 @@ const MenuItem = ({
               width: "100%",
               transition: "width 0.2s ease",
             },
-            fontWeight: "bold",
+            // fontWeight: "bold",
             //letterSpacing: "1px",
           }}
           _before={{
@@ -232,23 +189,10 @@ const MenuItem = ({
             align="center"
             fontSize="xl"
             letterSpacing="1px"
-            // onMouseEnter={showTooltip}
-            // onMouseLeave={hideTooltip}
           >
             {children}
           </Text>
         </Link>
-        {/* <Box
-          // this should be reworked
-          display="block"
-          position="relative"
-          w="230px"
-          h="200px"
-          bg="red.200"
-          visibility={isDropdownVisible ? "visible" : "hidden"}
-          top="115px"
-          left="-50%"
-        ></Box> */}
       </Flex>
     </>
   );
