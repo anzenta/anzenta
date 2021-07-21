@@ -127,7 +127,7 @@ const EHS = () => {
       >
         <Text
           color="darkGray"
-          fontSize={["xl", "2xl"]}
+          fontSize={["xl", "3xl"]}
           p={6}
           pt="0"
           marginTop="10px"
