@@ -10,10 +10,11 @@ import {
 
 import { useState } from "react";
 import router from "next/router";
+import { useI18n } from "next-localization";
 
 const GridContent = ({ gridcontent, isTitleTooLong }) => {
   const [isHovered, setHovered] = useState(false);
-
+  const i18n = useI18n();
   
   return (
     <Flex
@@ -78,7 +79,7 @@ const GridContent = ({ gridcontent, isTitleTooLong }) => {
               fontSize={["md", "lg", "xl", "2xl", "2xl"]}
               fontWeight="normal"
             >
-              Learn more
+            {i18n.t("LearnMore")}
             </Button>
           </Box>
         </Flex>

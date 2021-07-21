@@ -19,9 +19,11 @@ const Header = () => {
 
   if (loc === "hu") {
     changeToThisLocale = "en";
+  
   } else {
     changeToThisLocale = "hu";
   }
+
   const [hasScrolledFromTop, setScrolledFromTop] = useState(false);
   // const [shouldMonitorScroll, setShouldMonitorScroll] = useState(false);
 
