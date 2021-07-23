@@ -113,10 +113,10 @@ const Services = () => {
   >
       <Flex w="100%" bg="rgba(73,73,72)" justifyContent="center" py={10}>
         <VStack spacing={5} alignItems="flex-start" pl={12} color="white">
-          <Text fontSize={["3xl", "4xl"]} pr={4} maxW="100%">
+          <Text fontSize={["4xl", "4xl"]} pr={4} maxW="100%">
             {i18n.t("MiddleTextBand1")}
           </Text>
-          <Text fontSize={["xl", "2xl"]} fontWeight="300" pr={4}>
+          <Text fontSize={["2xl", "2xl"]} fontWeight="300" pr={4}>
             {i18n.t("MiddleTextBand2")}
           </Text>
         </VStack>

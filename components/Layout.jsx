@@ -27,7 +27,7 @@ const Layout = ({ title, children }) => {
       <Header />
 
       <main>
-        <Container maxW="2560px" p="0">
+        <Container maxW={["100%","1300px"]} p="0">
           {children}
         </Container>{" "}
       </main>

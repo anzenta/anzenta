@@ -13,7 +13,7 @@ import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
 import { useI18n } from "next-localization";
 
 const ContactUs = () => {
-  
+
   const i18n = useI18n();
   
   return (
@@ -25,15 +25,14 @@ const ContactUs = () => {
         py={10}
       >
         <VStack spacing={5} alignItems="flex-start" pl={12} color="white">
-          <Text fontSize={["3xl", "4xl"]} pr={4} maxW="80%">
+          <Text fontSize={["2xl", "4xl"]} pr={4} maxW="80%">
           {i18n.t("contact1")} 
           </Text>
-          <Text fontSize={["xl", "2xl"]} fontWeight="300" pr={4}>
+          <Text fontSize={["1xl", "2xl"]} fontWeight="300" pr={4}>
           {i18n.t("contact2")} 
           </Text>
         </VStack>
       </Flex>
-
       <Flex
         flexDirection={["column", "column", "column", "row"]}
         justifyContent="space-between"
@@ -84,7 +83,7 @@ const ContactCard = ({ name, title, isRightAligned }) => {
         />
         <VStack color="darkGray" alignItems="flex-start" spacing={6}>
           <VStack color="darkGray" alignItems="flex-start">
-            <Text fontSize="2xl">{name}</Text>
+            <Text fontSize={["1xl","2xl"]}>{name}</Text>
             <Text>{title}</Text>
           </VStack>
           <VStack color="darkGray" alignItems="flex-start"></VStack>

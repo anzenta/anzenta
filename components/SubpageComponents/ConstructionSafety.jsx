@@ -26,111 +26,119 @@ const ConstructionSafety = () => {
     }, 250);
     return () => clearTimeout(timer);
   }, []);
-
   return (
     <Box mb="100px">
-      <Box w="100%" h="70px" />
-
+      <Box  h="70px" />
       <Box position="relative" h="100%">
         <Box
           w={isLoaded ? "100%" : 0}
           h="full"
-          bg="linear-gradient(240deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 50%),linear-gradient(300deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 50%), linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 20%)"
+          bg="linear-gradient(to bottom , transparent, black 99%)"
           transition="width 0.7s"
           top="0"
           right="0"
           position="absolute"
         />
         <Flex
-          w="75%"
-          top="0"
+          bottom="0"
           position="absolute"
           flexDirection="column"
-          justifyContent="flex-end"
-          alignItems="flex-end"
           p={4}
         >
-          <HStack>
-            <Text as="h1" color="darkGray" fontSize={["3xl", "6xl"]} p={6}>
+          <HStack >
+            <Text as="h1" color="white" fontSize={["2xl", "6xl"]} p={6}>
             {i18n.t("Construction_1")} 
             </Text>
           </HStack>
-         
         </Flex>
-
         <Image
-          src="1.jpg"
+          src="56.jpg"
+          maxWidth={["100%","100%"]}
           // top="0"
           // left="0"
           // position="absolute"
         />
       </Box>
-
+      
       <Flex
-        w="75%"
         mx="auto"
         justifyContent="flex-start"
         p={6}
-        pt="0"
+        pt="10"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         flexDirection="column"
       >
-        
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          textAlign="left"
+          textAlign="justify"
+          topMargin="30px"
         >
         {i18n.t("Construction_2")} 
         </Text>
       </Flex>
-
+      
+     
+      <HStack wrap="wrap" >
       <Flex
-        w="75%"
         mx="auto"
         justifyContent="flex-start"
         p={6}
         pt="0"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         flexDirection="column"
+        mt="60px"
       >
-
+         <HStack >
+            <Text as="h1" color="darkGray" fontSize={["2xl", "4xl"]} p={6} paddingTop="60px" width="100%"textAlign="center">
+            {i18n.t("Construction_21")} 
+            </Text>
+      </HStack>
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          paddingTop="30px"
-          textAlign="left"
-          maxW="100%"
+          paddingTop="20px"
+          textAlign="justify"
+          maxWidth="744px"
         >
         {i18n.t("Construction_3")} 
         </Text>
       </Flex>
-
-
+      <Image src="1.jpg"
+          maxWidth={["100%","500px"]}
+          borderRadius="40px"
+          p="30px"
+          />
+          
+      </HStack>
       <Accordion
+      
+      textAlign="justify"
         defaultIndex={[0]}
         allowMultiple
-        w="75%"
         mx="auto"
-        mt="30px"
+        mt="60px"
         bg="red"
         color="white"
+        fontSize={["1xl", "2xl"]}
+        maxWidth="1252px"
+        open="0"
       >
-        <AccordionItem>
+        <AccordionItem>{({ isExpanded }) => (
+      <>
           <h2>
             <AccordionButton>
-              <Box flex="1" textAlign="left" fontSize="24px">
+              <Box flex="1" textAlign="left" fontSize={["1xl", "24px"]}>
               {i18n.t("Construction_4")} 
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4} bg="white" color="darkGray" fontSize="18px">
-            
+          <AccordionPanel pb={4} bg="white" color="darkGray" fontSize={["1xl", "18px"]}>
             <List spacing={5}>
               <ListItem>
                 <ListIcon as={MdSettings} color="red"/>{i18n.t("Construction_5")} </ListItem>
@@ -140,29 +148,27 @@ const ConstructionSafety = () => {
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Construction_9")} </ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Construction_10")} </ListItem>
             </List>
-            
           </AccordionPanel>
-        
+          </>
+    )}
         </AccordionItem>
         </Accordion>
         <Flex
-        w="75%"
+        
         mx="auto"
         justifyContent="flex-start"
         p={6}
         pt="0"
-        
         flexDirection="column"
-        marginTop="35px"
+        mt="40px"
       >
         <Text
           marginTop="30px"
           color="darkGray"
-          fontSize={["3xl", "1xl"]}
+          fontSize={["1xl", "2xl"]}
           pt="0"
-          textAlign="left"
+          textAlign="justify"
           maxW="100%"
-          
         >
         {i18n.t("Construction_11")} 
         </Text>
@@ -170,37 +176,52 @@ const ConstructionSafety = () => {
         <Accordion
         defaultIndex={[0]}
         allowMultiple
-        w="75%"
+        textAlign="justify"
         mx="auto"
         bg="red"
         color="white"
+       maxWidth="1252px"
       >
         <AccordionItem>
           <h2>
             <AccordionButton>
-              <Box flex="1" textAlign="left" fontSize="24px">
+              <Box flex="1" textAlign="left" fontSize={["1xl", "24px"]}>
               {i18n.t("Construction_12")} 
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4} bg="white" color="darkGray" fontSize="18px">
+          <AccordionPanel pb={4} bg="white" color="darkGray" fontSize={["1xl", "18px"]}>
             <List spacing={5}>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Construction_13")} </ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Construction_14")} </ListItem>
             </List>
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
+        </Accordion>
+        
+        <Accordion
+      textAlign="justify"
+        defaultIndex={[0]}
+        allowMultiple
+        mx="auto"
+        mt="30px"
+        bg="red"
+        color="white"
+        fontSize={["1xl", "2xl"]}
+        maxWidth="1252px"
+        open="0"
+      >
+        <AccordionItem >
           <h2>
             <AccordionButton>
-              <Box flex="1" textAlign="left" fontSize="24px">
+              <Box flex="1" textAlign="left" fontSize={["1xl", "24px"]}>
               {i18n.t("Construction_15")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4} bg="white" color="darkGray" fontSize="18px">
+          <AccordionPanel pb={4} bg="white" color="darkGray" fontSize={["1xl", "18px"]}>
             <List spacing={5}>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Construction_16")}</ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Construction_17")}</ListItem>

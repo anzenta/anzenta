@@ -19,6 +19,8 @@ import { MdSettings } from 'react-icons/md';
 const EHS = () => {
   const i18n = useI18n();
   const [isLoaded, setLoaded] = useState(false);
+
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
@@ -26,13 +28,43 @@ const EHS = () => {
     return () => clearTimeout(timer);
   }, []);
 
+
   return (
     <Box mb="100px" maxWidth="100%"  alignContent="normal">
-      <Box  h="70px"/>
+      <Box h="70px"/>
+      <Box position="relative" h="100%">
+        <Box
+          w={isLoaded ? "100%" : 0}
+          h="full"
+          bg="linear-gradient(to bottom , transparent, black 99%)"
+          transition="width 0.7s"
+          top="0"
+          right="0"
+          position="absolute"
+        />
+        <Flex
+          bottom="0"
+          position="absolute"
+          flexDirection="column"
+          p={4}
+        >
+          <HStack >
+            <Text as="h1" color="white" fontSize={["2xl", "6xl"]} p={6}>
+            {i18n.t("EHS_1")} 
+            </Text>
+          </HStack>
+        </Flex>
+        <Image
+          src="27.jpg"
+          maxWidth={["100%","100%"]}
+          // top="0"
+          // left="0"
+          // position="absolute"
+        />
+      </Box>
       <Flex
       flexDirection="row"
       flexWrap="wrap"
-      
       mx="auto"
       justifyContent="Center"
       p={6}
@@ -40,17 +72,18 @@ const EHS = () => {
       verticalAlign="center"
       >  
       <Flex
-        boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)" 
+      boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)" 
       >    
         <Flex
         flexDirection="column"
-        maxWidth="800px">
+        maxWidth="600px"
+        >
         <HStack justifyContent="Center">
-            <Text as="h1" color="darkGray" fontSize={["3xl", "5xl"]} p={6}>
+            <Text as="h1" color="darkGray" fontSize={["2xl", "4xl"]} p={6}>
             {i18n.t("EHS_1")}
             </Text>
         </HStack>
-        <Text color="darkGray" fontSize={["3xl", "xl"]} p={6} textAlign="left">
+        <Text color="darkGray" fontSize={["1xl", "2xl"]} p={6} textAlign="left">
         {i18n.t("EHS_2")}
         </Text>
         </Flex>
@@ -58,38 +91,34 @@ const EHS = () => {
         <Flex verticalAlign="center">       
           <Image
           flexWrap="wrap"
-          borderRadius="32px"
-          maxWidth="500px"
+          borderRadius={["0px","32px"]}
+          maxWidth={["300px","500px"]}
           maxHeight="600px"
           src="2.jpg"
           objectFit="cover"
-          padding="45px"
+          padding={["0px","45px"]}
           justifyContent="flex-start"
           p={6}
-          flexShrink="1"
           />
         </Flex>
       </Flex>
-      
-
-
       <Flex         
         mx="auto"
         justifyContent="Center"
-      
-        maxWidth="1300px"
         flexDirection="row"
         flexWrap="wrap"
         paddingTop="20px">
-      <Flex flexDirection="column" maxWidth="700px">
-      <Flex  boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
+      <Flex flexDirection="column" maxWidth="500px">
+      <Flex  
+      boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
       justifyContent="flex-start"
       p={6}
       pt="0"
+
       >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
           marginTop="10px"
@@ -99,52 +128,49 @@ const EHS = () => {
         {i18n.t("EHS_3")}
         </Text>
       </Flex>
-
-      
       </Flex>
-      <Flex 
-        //w="75%"
-        mx="auto"
+      <Flex
         
-        >
-      <Accordion
-      marginTop="10px"
-        defaultIndex={[0]}
-        allowMultiple
-        color="white"
+        
       >
-        <AccordionItem>
+      <VStack
+
+        margin="0px"
+        defaultIndex={[0]}
+        color="white"
+        width="350px"
+      >
+        
           <h2>
-            <AccordionButton bg="red" style={{backgroundColor: 'red',}}>
-              <Box flex="1" textAlign="left" >
+            <Flex bg="red" style={{backgroundColor: 'red',}}>
+              <Box flex="1" textAlign="left" padding="10px">
               {i18n.t("EHS_4")}
               </Box>
-              <AccordionIcon />
-            </AccordionButton>
+              
+            </Flex>
           </h2>
-          <AccordionPanel pb={4}  color="darkGray">
-          <List spacing={5}>
+          <Box pb={4}  color="darkGray">
+          <List spacing={5} textAlign="left">
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("EHS_5")}</ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("EHS_6")}</ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("EHS_7")}</ListItem>
-            </List>
-          </AccordionPanel>
-        </AccordionItem>
-      </Accordion>
+          </List>
+          </Box>
+        
+      </VStack>
       </Flex>
       </Flex>
       <Flex         
         mx="auto"
         justifyContent="Center"
         //w="75%"
-        maxWidth="1300px"
         flexDirection="row"
         flexWrap="wrap-reverse"
         paddingTop="20px">
         <Image
           flexWrap="wrap-reverse"
           borderRadius="32px"
-          maxWidth="500px"
+          maxWidth={["300px","500px"]}
           maxHeight="600px"
           src="53.jpg"
           objectFit="cover"
@@ -153,7 +179,7 @@ const EHS = () => {
           p={6}
           flexShrink="1"
           />
-      <Flex flexDirection="column" maxWidth="800px">
+      <Flex flexDirection="column" maxWidth="600px">
       <Flex        
         justifyContent="flex-start"
         p={6}
@@ -163,7 +189,7 @@ const EHS = () => {
         >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
           textAlign="left"
