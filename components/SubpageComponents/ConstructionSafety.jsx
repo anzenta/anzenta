@@ -34,7 +34,7 @@ const ConstructionSafety = () => {
           w={isLoaded ? "100%" : 0}
           h="full"
           bg="linear-gradient(to bottom , transparent, black 99%)"
-          transition="width 0.7s"
+          transition="width 0s"
           top="0"
           right="0"
           position="absolute"

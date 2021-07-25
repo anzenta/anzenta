@@ -15,20 +15,15 @@ import {
 import { List, ListItem, ListIcon, OrderedList, UnorderedList } from "@chakra-ui/react"
 import { MdSettings } from 'react-icons/md';
 
-
 const EHS = () => {
   const i18n = useI18n();
   const [isLoaded, setLoaded] = useState(false);
-
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
     }, 250);
     return () => clearTimeout(timer);
   }, []);
-
-
   return (
     <Box mb="100px" maxWidth="100%"  alignContent="normal">
       <Box h="70px"/>
@@ -37,7 +32,7 @@ const EHS = () => {
           w={isLoaded ? "100%" : 0}
           h="full"
           bg="linear-gradient(to bottom , transparent, black 99%)"
-          transition="width 0.7s"
+          transition="width 0s"
           top="0"
           right="0"
           position="absolute"
@@ -67,7 +62,6 @@ const EHS = () => {
       flexWrap="wrap"
       mx="auto"
       justifyContent="Center"
-      p={6}
       pt="0"
       verticalAlign="center"
       >  
@@ -76,14 +70,9 @@ const EHS = () => {
       >    
         <Flex
         flexDirection="column"
-        maxWidth="600px"
+        maxWidth="700px"
         >
-        <HStack justifyContent="Center">
-            <Text as="h1" color="darkGray" fontSize={["2xl", "4xl"]} p={6}>
-            {i18n.t("EHS_1")}
-            </Text>
-        </HStack>
-        <Text color="darkGray" fontSize={["1xl", "2xl"]} p={6} textAlign="left">
+        <Text color="darkGray" fontSize={["1xl", "2xl"]} p={6} textAlign="justify">
         {i18n.t("EHS_2")}
         </Text>
         </Flex>
@@ -91,7 +80,7 @@ const EHS = () => {
         <Flex verticalAlign="center">       
           <Image
           flexWrap="wrap"
-          borderRadius={["0px","32px"]}
+          borderRadius={["30px","52px"]}
           maxWidth={["300px","500px"]}
           maxHeight="600px"
           src="2.jpg"
@@ -108,13 +97,11 @@ const EHS = () => {
         flexDirection="row"
         flexWrap="wrap"
         paddingTop="20px">
-      <Flex flexDirection="column" maxWidth="500px">
+      <Flex flexDirection="column" maxWidth="700px">
       <Flex  
       boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
       justifyContent="flex-start"
-      p={6}
       pt="0"
-
       >
         <Text
           color="darkGray"
@@ -123,30 +110,29 @@ const EHS = () => {
           pt="0"
           marginTop="10px"
           marginBottom="10px"
-          textAlign="left"
+          textAlign="justify"
         >
         {i18n.t("EHS_3")}
         </Text>
       </Flex>
       </Flex>
       <Flex
-        
-        
       >
       <VStack
-
-        margin="0px"
+        marginLeft={["0px","100px"]}
+        marginRight={["0px","100px"]}
         defaultIndex={[0]}
         color="white"
-        width="350px"
+        width="300px"
+        mt={["30px","0px"]}
       >
-        
           <h2>
-            <Flex bg="red" style={{backgroundColor: 'red',}}>
+            <Flex bg="red" style={{backgroundColor: 'red',}}
+            borderRadius="6px"
+            >
               <Box flex="1" textAlign="left" padding="10px">
               {i18n.t("EHS_4")}
               </Box>
-              
             </Flex>
           </h2>
           <Box pb={4}  color="darkGray">
@@ -156,7 +142,6 @@ const EHS = () => {
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("EHS_7")}</ListItem>
           </List>
           </Box>
-        
       </VStack>
       </Flex>
       </Flex>
@@ -169,30 +154,29 @@ const EHS = () => {
         paddingTop="20px">
         <Image
           flexWrap="wrap-reverse"
-          borderRadius="32px"
+          borderRadius={["30px","52px"]}
           maxWidth={["300px","500px"]}
           maxHeight="600px"
           src="53.jpg"
           objectFit="cover"
-          padding="45px"
+          padding={["24px","45px"]}
           justifyContent="flex-start"
-          p={6}
           flexShrink="1"
           />
       <Flex flexDirection="column" maxWidth="600px">
       <Flex        
         justifyContent="flex-start"
-        p={6}
         pt="0"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         paddingTop="20px"
         >
         <Text
+        maxWidth="700px"
           color="darkGray"
           fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          textAlign="left"
+          textAlign="justify"
           marginTop="7px"
         >
         {i18n.t("EHS_8")}
@@ -213,5 +197,4 @@ const EHS = () => {
     </Box>
   );
 };
-
 export default EHS;

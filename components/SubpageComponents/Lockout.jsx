@@ -29,12 +29,42 @@ const Lockout = () => {
   return (
     <Box mb="100px" maxWidth="100%"  alignContent="normal">
       <Box  h="70px"/>
+      <Box position="relative" h="100%">
+        <Box
+          w={isLoaded ? "100%" : 0}
+          h="full"
+          bg="linear-gradient(to bottom , transparent, black 99%)"
+          transition="width 0s"
+          top="0"
+          right="0"
+          position="absolute"
+        />
+        <Flex
+          bottom="0"
+          position="absolute"
+          flexDirection="column"
+          p={4}
+        >
+          <HStack >
+            <Text as="h1" color="white" fontSize={["2xl", "6xl"]} p={6}>
+            {i18n.t("Lock_1")} 
+            </Text>
+          </HStack>
+        </Flex>
+        <Image
+          src="73.jpg"
+          maxWidth={["100%","100%"]}
+          // top="0"
+          // left="0"
+          // position="absolute"
+        />
+      </Box>
       <Flex
       flexDirection="row"
       flexWrap="wrap"
       mx="auto"
       justifyContent="Center"
-      p={6}
+      
       pt="0"
       verticalAlign="center"
       >  
@@ -43,13 +73,8 @@ const Lockout = () => {
       >    
         <Flex
         flexDirection="column"
-        maxWidth="800px">
-        <HStack justifyContent="Center">
-            <Text as="h1" color="darkGray" fontSize={["3xl", "6xl"]} p={6}>
-            {i18n.t("Lock_1")}
-            </Text>
-        </HStack>
-        <Text color="darkGray" fontSize={["3xl", "xl"]} p={6} textAlign="left">
+        maxWidth={["100%","800px"]}>
+        <Text color="darkGray" fontSize={["1xl", "2xl"]} p={6} textAlign="justify">
         {i18n.t("Lock_2")}
         </Text>
         </Flex>
@@ -57,39 +82,36 @@ const Lockout = () => {
         <Flex verticalAlign="center">       
           <Image
           flexWrap="wrap"
-          borderRadius="300px"
-          maxWidth="500px"
+          borderRadius="30px"
+          maxWidth={["100%","500px"]}
           maxHeight="600px"
           src="18.jpg"
           objectFit="cover"
           padding="45px"
           justifyContent="flex-start"
           p={6}
-          flexShrink="1"
+          
           />
         </Flex>
       </Flex>
-      <Flex verticalAlign="center">
+      <Flex marginTop="60px">
       <VStack         
-        mx="auto"
-       
-        verticalAlign="center"
+        
         maxWidth="1300px"
         flexDirection="row"
         flexWrap="wrap"
         paddingTop="20px">
-      <Flex flexDirection="column" maxWidth="800px">
+      <Flex maxWidth={["100%","800px"]}>
       <Flex  boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
       justifyContent="flex-start"
-      p={6}
       pt="0"
       >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          textAlign="left"
+          textAlign="justify"
         >
 {i18n.t("Lock_3")}
         </Text>
@@ -110,7 +132,7 @@ const Lockout = () => {
       >
         <AccordionItem marginBottom="20px">
           <h2>
-            <AccordionButton bg="red" style={{backgroundColor: 'red',}}>
+            <AccordionButton borderRadius="5px" bg="red" style={{backgroundColor: 'red',}}>
               <Box flex="1" textAlign="left" >
               {i18n.t("Lock_4")}
               </Box>
@@ -139,11 +161,12 @@ const Lockout = () => {
         maxWidth="1300px"
         flexDirection="row"
         flexWrap="wrap-reverse"
-        paddingTop="20px">
+       
+        marginTop="60px">
         <Image
           flexWrap="wrap-reverse"
-          borderRadius="300px"
-          maxWidth="500px"
+          borderRadius="30px"
+          maxWidth={["100%","500px"]}
           maxHeight="600px"
           src="49.jpg"
           objectFit="cover"
@@ -157,7 +180,6 @@ const Lockout = () => {
         
         mx="auto"
         justifyContent="flex-start"
-        p={6}
         pt="0"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         flexDirection="column"
@@ -165,10 +187,10 @@ const Lockout = () => {
         >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          textAlign="left"
+          textAlign="justify"
         >
 {i18n.t("Lock_11")}
         </Text>

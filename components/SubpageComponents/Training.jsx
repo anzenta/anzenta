@@ -37,32 +37,27 @@ const Training = () => {
         <Box
           w={isLoaded ? "100%" : 0}
           h="full"
-          bg="linear-gradient(240deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 50%),linear-gradient(300deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 50%), linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 20%)"
-          transition="width 0.7s"
+          bg="linear-gradient(to bottom , transparent, black 99%)"
+          transition="width 0s"
           top="0"
           right="0"
           position="absolute"
         />
         <Flex
-          w="100%"
-          top="0"
-          
+          bottom="0"
           position="absolute"
           flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
           p={4}
         >
-          <HStack>
-            <Text as="h1" color="darkGray" fontSize={["3xl", "6xl"]} p={6}>
-            {i18n.t("Training_1")}
+          <HStack >
+            <Text as="h1" color="white" fontSize={["2xl", "6xl"]} p={6}>
+            {i18n.t("Training_1")} 
             </Text>
           </HStack>
-         
         </Flex>
-
         <Image
           src="36.jpg"
+          maxWidth={["100%","100%"]}
           // top="0"
           // left="0"
           // position="absolute"
@@ -70,10 +65,10 @@ const Training = () => {
       </Box>
 
       <Flex
-        w="75%"
+        
         mx="auto"
         justifyContent="flex-start"
-        p={6}
+        mt="20px"
         pt="0"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         flexDirection="column"
@@ -82,30 +77,30 @@ const Training = () => {
         
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          textAlign="Left"
+          textAlign="justify"
         >
           {i18n.t("Training_2")}
         </Text>
       </Flex>
 
       <Flex
-        w="75%"
+        
         mx="auto"
         justifyContent="flex-start"
-        p={6}
+        
         pt="0"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         flexDirection="column"
       >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="10"
-          textAlign="left"
+          textAlign="justify"
           maxW="100%"
         >
       {i18n.t("Training_3")}
@@ -115,7 +110,7 @@ const Training = () => {
       <Accordion
         defaultIndex={[0]}
         allowMultiple
-        w="75%"
+        
         mx="auto"
         mt="30px"
         bg="red"
@@ -153,7 +148,6 @@ const Training = () => {
           </h2>
           <AccordionPanel pb={4} bg="white" color="darkGray" fontSize="18px">
             <List spacing={5}>
-              <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Training_10")}</ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Training_11")}</ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Training_12")}</ListItem>
               <ListItem><ListIcon as={MdSettings} color="red"/>{i18n.t("Training_13")}</ListItem>

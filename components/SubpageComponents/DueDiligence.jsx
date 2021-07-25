@@ -26,48 +26,41 @@ const EHS = () => {
   return (
     <Box  maxWidth="100%" align="center">
       <Box  h="70px"/>
-      <Box maxWidth="1920px" position="relative" h="100%">
+      <Box position="relative" h="100%">
         <Box
           w={isLoaded ? "100%" : 0}
           h="full"
-          bg="linear-gradient(240deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 40%),linear-gradient(200deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 40%), linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 3%)"
+          bg="linear-gradient(to bottom , transparent, black 99%)"
           transition="width 0s"
-          top="0"
-          
-          position="absolute"
-        />
-        <Flex
           top="0"
           right="0"
           position="absolute"
-          justifyContent="right"
-         
+        />
+        <Flex
+          bottom="0"
+          position="absolute"
+          flexDirection="column"
           p={4}
         >
-          <HStack>
-            <Text color="darkGray" fontSize={["3xl", "5xl"]} p={6}>
-            {i18n.t("DUE_1")}
+          <HStack >
+            <Text as="h1" color="white" fontSize={["2xl", "6xl"]} p={6}>
+            {i18n.t("DUE_1")} 
             </Text>
           </HStack>
-         
         </Flex>
-        <Flex alignItems="right">
         <Image
-          src="4.jpg"
-
+          src="44.jpg"
+          maxWidth={["100%","100%"]}
           // top="0"
           // left="0"
           // position="absolute"
         />
-        </Flex>
       </Box>
       <Flex
       flexDirection="row"
       flexWrap="wrap"
-      
       mx="auto"
       justifyContent="Center"
-      p={6}
       pt="0"
       verticalAlign="center"
       >  
@@ -76,8 +69,8 @@ const EHS = () => {
       >    
         <Flex
         flexDirection="column"
-        maxWidth="800px">
-        <Text color="darkGray" fontSize={["3xl", "xl"]} p={6} textAlign="left">
+        maxWidth="700px">
+        <Text color="darkGray" fontSize={["1xl", "2xl"]} p={6} textAlign="justify">
         {i18n.t("DUE_2")}
         </Text>
         </Flex>
@@ -85,15 +78,14 @@ const EHS = () => {
         <Flex verticalAlign="center">       
           <Image
           flexWrap="wrap"
-          borderRadius="300px"
-          maxWidth="500px"
+          borderRadius="30px"
+          maxWidth={["100%","500px"]}
           maxHeight="600px"
           src="7.jpg"
           objectFit="cover"
           padding="45px"
           justifyContent="flex-start"
           p={6}
-         
           />
         </Flex>
       </Flex>
@@ -107,15 +99,18 @@ const EHS = () => {
         maxWidth="1300px"
         flexDirection="row"
         flexWrap="wrap-reverse"
+        marginTop="60px"
         >
         <Flex verticalAlign="Center">
         <Image
-          borderRadius="300px"
-          maxWidth="500px"
+          borderRadius="30px"
+          maxWidth={["100%","500px"]}
           maxHeight="800px"
+          marginTop="20px"
           src="4.jpg"
           objectFit="cover"
           p={6}
+          
           />
         </Flex>
           
@@ -124,10 +119,19 @@ const EHS = () => {
       justifyContent="flex-start"
       p={6}
       pt="0"
+    
+      flexDirection="column"
       >
+            <Text as="h1" color="darkGray" fontSize={["1xl", "4xl"]} 
+           
+            marginBottom="20px"
+            >
+            {i18n.t("EHS_11")} 
+            </Text>
+        
         <Text
           color="darkGray"
-          fontSize={["xl", "3xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
           marginTop="10px"
@@ -136,41 +140,25 @@ const EHS = () => {
         >
         {i18n.t("DUE_3")}
         </Text>
-      </Flex>
-
-      
-      
-      
-      <Flex  boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
-      justifyContent="flex-start"
-      p={6}
-      pt="0"
-      >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
           marginTop="10px"
           marginBottom="10px"
-          textAlign="left"
+          textAlign="justify"
         >
         {i18n.t("DUE_4")}
         </Text>
-      </Flex>
-      <Flex  boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
-      justifyContent="flex-start"
-      p={6}
-      pt="0"
-      >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
           marginTop="10px"
           marginBottom="10px"
-          textAlign="left"
+          textAlign="justify"
         >
         {i18n.t("DUE_5")}
         </Text>
@@ -188,20 +176,21 @@ const EHS = () => {
       margin="30px"
       mx="auto"
       justifyContent="Center"
-
+      marginTop="60px"
       >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
           marginTop="10px"
           marginBottom="10px"
-          textAlign="left"
+          textAlign="justify"
         >
-        {i18n.t("DUE_3")}
+        {i18n.t("DUE_6")}
         </Text>
       </Flex>
+      <Box height="100px"></Box>
     </Box>
   );
 };

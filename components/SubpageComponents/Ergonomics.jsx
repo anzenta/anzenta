@@ -28,6 +28,36 @@ const Ergonomics = () => {
   return (
     <Box mb="100px">
       <Box w="100%" h="70px" />
+      <Box position="relative" h="100%">
+        <Box
+          w={isLoaded ? "100%" : 0}
+          h="full"
+          bg="linear-gradient(to bottom , transparent, black 99%)"
+          transition="width 0s"
+          top="0"
+          right="0"
+          position="absolute"
+        />
+        <Flex
+          bottom="0"
+          position="absolute"
+          flexDirection="column"
+          p={4}
+        >
+          <HStack >
+            <Text as="h1" color="white" fontSize={["2xl", "6xl"]} p={6}>
+            {i18n.t("Ergonomia_1")} 
+            </Text>
+          </HStack>
+        </Flex>
+        <Image
+          src="68.jpg"
+          maxWidth={["100%","100%"]}
+          // top="0"
+          // left="0"
+          // position="absolute"
+        />
+      </Box>
       <Flex
       flexDirection="row"
       wrap="wrap"
@@ -42,7 +72,7 @@ const Ergonomics = () => {
       >
       
       <Flex
- maxWidth="700px"
+        maxWidth="700px"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         alignItems="center"
       >
@@ -51,12 +81,8 @@ const Ergonomics = () => {
         <Flex
         alignItems="center"
         flexDirection="column">
-        <HStack>
-            <Text as="h1" color="darkGray" fontSize={["3xl", "6xl"]} p={6} alignItems="center">
-            {i18n.t("Ergonomia_1")}
-            </Text>
-        </HStack>
-        <Text color="darkGray" fontSize={["3xl", "xl"]} p={6} textAlign="left">
+
+        <Text color="darkGray" fontSize={["1xl", "2xl"]} p={6} textAlign="justify">
         {i18n.t("Ergonomia_2")}
                 </Text>
         </Flex>
@@ -68,8 +94,8 @@ const Ergonomics = () => {
         
         >       
           <Image
-          borderRadius="300px"
-          maxWidth="550px"
+          borderRadius="30px"
+          maxWidth={["100%","550px"]}
           maxHeight="600px"
           src="8.jpg"
           objectFit="cover"
@@ -88,20 +114,28 @@ const Ergonomics = () => {
         maxWidth="1300px"
         mx="auto"
         justifyContent="flex-start"
-        p={6}
         pt="0"
         boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
         flexDirection="column"
-        paddingTop="20px"
+        marginTop="60px"
         >
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          textAlign="left"
+          textAlign="justify"
         >
           {i18n.t("Ergonomia_3")}
+        </Text>
+        <Text
+          color="darkGray"
+          fontSize={["1xl", "2xl"]}
+          p={6}
+          pt="0"
+          textAlign="justify"
+        >
+          {i18n.t("Ergonomia_4")}
         </Text>
       </Flex>
 
@@ -111,17 +145,17 @@ const Ergonomics = () => {
         defaultIndex={[0]}
         allowMultiple
         maxWidth="1300px"
-     
+
         mx="auto"
-        mt="30px"
+        mt="60px"
         bg="red"
         color="white"
       >
         <AccordionItem>
           <h2>
-            <AccordionButton>
-              <Box flex="1" textAlign="left">
-              {i18n.t("Ergonomia_4")}
+            <AccordionButton >
+              <Box flex="1" textAlign="left" >
+              {i18n.t("Ergonomia_5")}
               </Box>
               <AccordionIcon />
             </AccordionButton>

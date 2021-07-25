@@ -31,49 +31,54 @@ const FireSafety = () => {
         <Box
           w={isLoaded ? "100%" : 0}
           h="full"
-          bg="linear-gradient(240deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 50%),linear-gradient(300deg,rgba(255,255,255,1) 30%,rgba(255,255,255,0) 50%), linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 20%)"
-          transition="width 0.7s"
+          bg="linear-gradient(to bottom , transparent, black 99%)"
+          transition="width 0s"
           top="0"
           right="0"
           position="absolute"
         />
         <Flex
-          top="0"
-          right="0"
+          bottom="0"
           position="absolute"
           flexDirection="column"
-          justifyContent="flex-end"
-          alignItems="flex-end"
           p={4}
         >
-          <HStack>
-            <Icon as={AiFillFire} boxSize={16} _hover={{ color: "red" }} />
-            <Text as="h1" color="darkGray" fontSize={["3xl", "6xl"]} p={6}>
-            {i18n.t("Fire_1")}
+          <HStack >
+            <Text as="h1" color="white" fontSize={["2xl", "6xl"]} p={6}>
+            {i18n.t("Fire_1")} 
             </Text>
           </HStack>
-          <Text
-            color="darkGray"
-            fontSize={["3xl", "3xl"]}
-            p={6}
-            boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
-            textAlign="right"
-            maxW="40%"
-          >
-          {i18n.t("Fire_2")}
-          </Text>
         </Flex>
-
         <Image
-          src="fire-2653211_1920.jpg"
+          src="43.jpg"
+          maxWidth={["100%","100%"]}
           // top="0"
           // left="0"
           // position="absolute"
         />
       </Box>
-
       <Flex
-        w="75%"
+        mx="auto"
+        justifyContent="flex-start"
+        p={6}
+        pt="0"
+        boxShadow="0 10px 20px -10px rgb(0 0 0/ 20%)"
+        flexDirection="column"
+        marginTop="30px"
+      >
+
+        <Text
+          color="darkGray"
+          fontSize={["1xl", "2xl"]}
+          p={6}
+          pt="0"
+          textAlign="justify"
+        >
+          {i18n.t("Fire_2")}
+        </Text>
+      </Flex>
+      <Flex
+      mt="60px"
         mx="auto"
         justifyContent="flex-start"
         p={6}
@@ -86,40 +91,29 @@ const FireSafety = () => {
         </Text>
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
+          fontSize={["1xl", "2xl"]}
           p={6}
           pt="0"
-          textAlign="left"
+          textAlign="justify"
         >
           {i18n.t("Fire_3")}
         </Text>
-      </Flex>
-
-      <Flex
-        w="75%"
-        mx="auto"
-        justifyContent="flex-start"
-        p={6}
-        pt="0"
-        marginTop="40px"
-        flexDirection="column"
-      >
-        
         <Text
           color="darkGray"
-          fontSize={["3xl", "xl"]}
-        
-          textAlign="left"
-          maxW="100%"
+          fontSize={["1xl", "2xl"]}
+          textAlign="justify"
+          p={6}
+          pt="0"
         >
           {i18n.t("Fire_4")}
         </Text>
       </Flex>
 
       <Accordion
+      mt="40px"
         defaultIndex={[0]}
         allowMultiple
-        w="75%"
+        w={["100%","75%"]}
         mx="auto"
         
         bg="red"
