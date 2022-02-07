@@ -69,10 +69,11 @@ const ContactCard = ({ name, title, isRightAligned }) => {
         isRightAligned ? "flex-end" : "initial",
         "flex-start",
       ]}
+      id='contactus_id'
     >
       <HStack spacing={6} alignItems="flex-start">
         <Avatar
-          src="business_woman.jpg"
+          src="profile.jpg"
           size="2xl"
           display={[
             isRightAligned ? "none" : "block",
@@ -89,7 +90,7 @@ const ContactCard = ({ name, title, isRightAligned }) => {
           <VStack color="darkGray" alignItems="flex-start"></VStack>
         </VStack>
         <Avatar
-          src="business_woman.jpg"
+          src="profile.jpg"
           size="2xl"
           display={[
             isRightAligned ? "block" : "none",
@@ -143,6 +144,40 @@ const PhoneCard = () => {
             }}
           >
             +36/30-594-1204
+          </Text>
+        </Link>
+      </HStack>
+      <HStack spacing={4}>
+        <PhoneIcon w={6} h={6} color="white" />
+        <Link
+          position="relative"
+          href={`tel: +36305941204`}
+          _hover={{ textDecor: "none" }}
+        >
+          <Text
+            as="span"
+            fontSize={["lg", "xl"]}
+            fontWeight="normal"
+            color="white"
+            _after={{
+              pos: "absolute",
+              content: "''",
+              w: "0",
+              h: "1px",
+              display: "block",
+              mb: "0",
+              bottom: "1px",
+              left: "0",
+              bg: "white",
+            }}
+            _hover={{
+              _after: {
+                width: "100%",
+                transition: "width 0.2s ease",
+              },
+            }}
+          >
+            +36/30-343-9860
           </Text>
         </Link>
       </HStack>

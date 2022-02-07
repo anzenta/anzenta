@@ -8,13 +8,15 @@ import {
 } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/react";
 import { useI18n } from "next-localization";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import { useRouter } from "next/router"
+
 
 const Header = () => {
   const i18n = useI18n();
   const loc = i18n.locale();
-
+  const router = useRouter()
   let changeToThisLocale = "en";
 
   if (loc === "hu") {
@@ -97,10 +99,10 @@ const Header = () => {
         mx="10px"
         position="relative"
       >
-        <Link href="/">
-          <Image src="Anzenta.png" height="100%" objectFit="contain" />
-        </Link>
+          
 
+         
+         
         <Box
           h="100%"
           position="absolute"
@@ -110,8 +112,20 @@ const Header = () => {
           w={["35px", "45px"]}
         >
           <HamburgerMenu />
+          
         </Box>
 
+        
+        <Link href="/" >
+        <Box onClick={() => router.back()}>  
+         
+        <Image  src="Anzenta.png" height="80%" objectFit="contain" />
+       
+      
+        </Box>
+        </Link>
+        
+        
         <Flex
           pl={5}
           position="absolute"
@@ -122,6 +136,7 @@ const Header = () => {
           h="full"
           display={["none", "none", "flex"]}
         >
+          
           <MenuItem
             to="#services"
             hiddenPseudoTitle="Services"

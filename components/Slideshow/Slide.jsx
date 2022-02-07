@@ -1,7 +1,8 @@
 import { Box, Center, Flex, Text, VStack } from "@chakra-ui/layout";
 import { Button, Image } from "@chakra-ui/react";
+import ScrollToButton from "/components/ScrollToButton";
 
-const Slide = ({ motto, title, text, imgSource, buttonText }) => {
+const Slide = ({ motto, title, text, imgSource, buttonText, scrollto}) => {
   return (
     <Flex w="100%" bg="white" color="black" direction={["column","row"]} flexWrap="wrap">
       <Flex alignItems="center" justifyContent="center" w={["80%","50%"]}>
@@ -22,15 +23,18 @@ const Slide = ({ motto, title, text, imgSource, buttonText }) => {
             {text}
           </Text>
 
+          <ScrollToButton toId= "contactus_id">
           <Button
             bg="#d02428"
             color="white"
             fontWeight="normal"
             borderRadius="0px"
             _hover={{ background: "#682428" }}
+            
           >
             {buttonText}
           </Button>
+          </ScrollToButton>
         </VStack>
       </Flex>
     </Flex>

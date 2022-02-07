@@ -13,7 +13,6 @@ const Services = () => {
 
   useEffect(() => {
     const img = new Image();
-
     img.src = "0.png";
     img.onload = () => setLoaded(true);
   }, []);
@@ -24,9 +23,8 @@ const Services = () => {
       icon: GiHealthNormal,
       content: i18n.t("gridcontentsText_1"),
         //"Risk assessment is a management tool to ensure the risks to the health, safety and wellbeing of employees are suitably eliminated, reduced, or controlled.",
-      
       value: 1,
-      to:"",
+      to:"/health",
     },
     {
       //title: "EHS",

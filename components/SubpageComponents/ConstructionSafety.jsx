@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 
 import React from 'react';
-import ReactList from 'react-list';
 
 import { List, ListItem, ListIcon, OrderedList, UnorderedList } from "@chakra-ui/react"
 import { MdSettings } from 'react-icons/md';
